@@ -1,0 +1,33 @@
+.Footer{
+    width: 1240px;
+    height: 176px;
+    margin-left: 101px;
+    background-color: #CB0D1F;
+    margin-bottom: 22px;
+}
+
+@media screen and (max-width: 1024px) {
+    .Footer{
+        width: 984px;
+        height: 176px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Footer{
+        width: 729px;
+        height: 180px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .Footer{
+        width: 290px;
+        height: 180px;
+        margin-left: 15px;
+        margin-top: 0px;
+        margin-bottom: 19px;
+    }
+}

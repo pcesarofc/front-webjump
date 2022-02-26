@@ -1,0 +1,51 @@
+.Filtro-preco{
+    margin-left: 587.5px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.Ordenar{
+    width: 80px;
+    height: 15px;
+    margin-right: 13.28px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 11px;
+    text-align: left;
+    color: #808185;
+}
+
+.Dropbox{
+    width: 216px;
+    height: 27px;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    text-align: left;
+    border-color: #E2DEDC;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .Filtro-preco{
+        margin-left: 365.97px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Filtro-preco{
+        margin-left: 132.51px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .Filtro-preco{
+        margin-left: 0px;
+    }
+    
+    .Dropbox{
+        width: 198.63px;
+    }
+}

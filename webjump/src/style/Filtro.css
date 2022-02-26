@@ -1,0 +1,138 @@
+aside.Filtros{
+    width: 261px;
+    height: 474px;
+    background-color: white;
+    border: 1px solid #E2DEDC;
+    margin-top: 22.51px;
+    margin-left: 100.64px;
+}
+
+.Filter-title{
+    width: 136px;
+    height: 33px;
+    margin-left: 17.72px;
+    margin-top: 13.49px;
+    margin-bottom: 0px;
+    font-size: 24px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    text-align: left;
+    color: #ED1A39;
+}
+
+.Categorias{
+    height: 24px;
+    margin-left: 17.72px;
+    margin-top: 14px;
+    margin-bottom: 0px;
+    color: #1E2B50;
+    font-size: 18px;
+    text-align: left;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+
+.Cores-text{
+    height: 24px;
+    margin-left: 17.72px;
+    margin-top: 38.94px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    color: #1E2B50;
+    font-size: 18px;
+    text-align: left;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+
+.Categorias-filter{
+    width: 90px;
+    height: 70px;
+    margin-top: 11.06px;
+}
+
+.Filter-list{
+    font-family: 'Open Sans';
+    font-size: 16px;
+    text-align: left;
+    color: #626262;
+    cursor: pointer;
+}
+
+.Cores{
+    display: flex;
+}
+
+.Red, .Orange, .Aqua{
+    width: 48px;
+    height: 24px;
+    margin-top: 12.51px;
+    cursor: pointer;
+}
+
+.Red{
+    background-color: #CB0D1F;
+    margin-left: 17px;
+}
+
+.Orange{
+    background-color: #F26324;
+    margin-left: 3px;
+}
+
+.Aqua{
+    background-color: #27A3A9;
+    margin-left: 3px;
+}
+
+.Tipo-text{
+    height: 24px;
+    margin-left: 17.72px;
+    margin-top: 32.49px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    color: #1E2B50;
+    font-size: 18px;
+    text-align: left;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+
+.Tipo{
+    width: 95px;
+    height: 94px;
+    margin-top: 15.06px;
+}
+
+
+@media screen and (max-width: 1024px){
+
+    .Filters{
+        width: 744px;
+    }
+    aside.Filtros{
+        width: 226px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Filters{
+        width: 504px;
+    }
+    
+    aside.Filtros{
+        width: 207px;
+    }
+}
+
+@media screen and (max-width: 320px){
+
+    .Filters{
+        width: 304px;
+    }
+    aside.Filtros{
+        width: 290px;
+        margin-left: 15px;
+    }
+}

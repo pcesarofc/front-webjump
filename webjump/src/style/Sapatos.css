@@ -1,0 +1,33 @@
+.Sapatos{
+    width: 1440px;
+    height: auto;
+}
+.Corpo{
+    display: flex;
+}
+
+
+@media screen and (max-width: 1024px){
+    .Sapatos{
+        width: 1024px;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .Sapatos{
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .Sapatos{
+        width: 320px;
+    }
+    
+    .Corpo{
+        display: block;
+    }
+    
+}
+

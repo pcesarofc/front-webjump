@@ -1,0 +1,163 @@
+.Header-top{
+    height: 31px;
+    background-color: #231F20;
+    display: flex;
+}
+
+.Interrogation1, .Interrogation2{
+    align-self: center;
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+}
+
+.Header-top-text{
+    display: flex;
+    height: 19px;
+    margin-top: 4px;
+    margin-left: 1114px;
+    align-items: center;
+}
+
+p.Ou , .Acesso, .Cadastro{
+    color: white;
+    font-size: 14px;
+    margin-inline: 2.48px;
+    font-family: 'Open Sans';
+}
+
+.Acesso, .Cadastro{
+    font-weight: 700;
+}
+
+.Header-bot{
+    height: 114px;
+    display: flex;
+}
+
+.Search{
+    width: 414px;
+    height: 42px;
+    padding: 0px;
+    border: 1px solid #959595;
+    margin-left: 529.53px;
+    margin-top: 31px
+}
+
+.Botao-buscar{
+    width: 110px;
+    height: 44px;
+    background-color: #CB0D1F;
+    font-size: 16px;
+    color: white;
+    border-style: none;
+    margin-top: 31px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.Logo{
+    align-self: center;
+    margin-left: 101px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .Header-top-text{
+        margin-left: 777px;
+    }
+
+    .Header-bot{
+        width: 1024px;
+        height: 114px;
+        display: flex;
+    }
+
+    .Logo{
+        align-self: center;
+        margin-left: 19px;
+    }
+
+    .Search{
+        margin-left: 274.53px;
+        margin-top: 31px
+    }
+
+    .Botao-buscar{
+        margin-top: 31px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .Header-top-text{
+        margin-left: 521px;
+    }
+
+    .Header-bot{
+        width: 768px;
+        height: 114px;
+    }
+
+    .Logo{
+        margin-left: 20px;
+    }
+
+    .Search{
+        margin-left: 16.53px;
+        margin-top: 31px
+    }
+
+    .Botao-buscar{
+        margin-top: 31px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+
+    .Header-top{
+        height: 30px;
+    }
+
+    .Interrogation1, .Interrogation2{
+        visibility: visible;
+        width: 29px;
+        height: 27px;
+    }
+
+    .Interrogation2{
+        color: #CB0D1F;
+    }
+
+    .Header-top-text{
+        margin-left: 47px;
+    }
+
+    .Header-bot{
+        width: 320px;
+        height: 114px;
+        padding: 0;
+    }
+
+    .Logo{
+        margin-left: 16.58px;
+        width: 320px;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .Search{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    .Botao-buscar{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+}

@@ -1,0 +1,24 @@
+body {
+  width: 1444px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px){
+  body{
+    width: 1024px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  body{
+    width: 768px;
+    height: 941px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  body{
+    width: 320px;
+    height: 1095px;
+  }
+}

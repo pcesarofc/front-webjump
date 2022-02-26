@@ -1,0 +1,157 @@
+.Home{
+    display: flex;
+}
+
+.Caminho-aside{
+    width: 251.22px;
+    height: 507px;
+    background-color: #E2DEDC;
+    margin-top: 24px;
+    margin-left: 101px;
+}
+
+.Rectangle-header{
+    width: 954px;
+    height: 281px;
+    background-color: #ACACAC;
+    margin-top: 24px;
+    margin-left: 24.78px
+}
+
+.Title{
+    width: 210px;
+    height: 36px;
+    font-size: 26px;
+    text-align: left;
+    margin-left: 24.5px;
+    margin-top: 14.49px;
+    margin-bottom: 0px;
+    font-family: 'Open Sans';
+}
+
+.Text{
+    width: 951.65px;
+    height: 181.42px;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 5.4px;
+    margin-left: 24.5px;
+    margin-bottom: 12.69px;
+    color: #000000;
+    line-height: 19.2px;
+    font-family: 'Open Sans';
+}
+
+.Ul-aside{
+    font-size: 18px;
+    font-family: 'Open Sans';
+}
+
+.Li-aside{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .Home-section, .Home-page{
+        height: 532px;
+    }
+
+    .Caminho-aside{
+        width: 207px;
+        height: 483px;
+        margin-top: 17px;
+        margin-left: 20px;
+    }
+
+    .Rectangle-header{
+        width: 757.81px;
+        height: 223.34px;
+        margin-top: 17px;
+        margin-left: 20.19px
+    }
+
+    .Title{
+        font-size: 26px;
+        margin-left: 18.72px;
+        margin-top: 9.15px;
+    }
+
+    .Text{
+        width: 757.28px;
+        height: 247.89px;
+        margin-left: 18.71px;
+        margin-bottom: 0px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .Caminho-aside{
+        width: 153.19px;
+        height: 357px;
+    }
+
+    .Ul-aside{
+        width: 107px;
+        height: 99px;
+        font-size: 16px;
+    }
+
+    .Rectangle-header{
+        width: 560.84px;
+        height: 165.09px;
+        margin-left: 14.97px
+    }
+
+    .Title{
+        font-size: 26px;
+        margin-left: 18.53px;
+        margin-top: 6.4px;
+    }
+
+    .Text{
+        width: 553.28px;
+        height: 327.6px;
+        margin-left: 20.53px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+
+    .Home-section{
+        width: 320px;
+        height: 752px;
+    }
+
+    .Caminho-aside{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        margin: 0px;
+    }
+    
+    .Rectangle-header{
+        width: 290px;
+        height: 86px;
+        margin-top: 0px;
+        margin-left: 15px;
+    }
+
+    .Title{
+        margin-left: 14.72px;
+        margin-top: 14.49px;
+        margin-bottom: 0px;
+    }
+
+    .Text{
+        width: 289.28px;
+        height: 610.25px;
+        margin-block: 0px;
+        margin-left: 15.72px;
+    }
+}
