@@ -11,42 +11,42 @@ export default function () {
 
     const location = useLocation()
 
-    return (location.pathname == '/') ? <header className="Header">
-        <div className="Header-top">
-            <div className="Header-top-text">
-                <a href="" className="Acesso">Acesse sua Conta</a>
-                <p className="Ou">ou</p>
-                <a href="" className="Cadastro">Cadastre-se</a>
+    return (location.pathname == '/') ? <header className="header">
+        <div className="header-top">
+            <div className="header-top-text">
+                <a href="" className="acesso">Acesse sua Conta</a>
+                <p className="ou">ou</p>
+                <a href="" className="cadastro">Cadastre-se</a>
             </div>
         </div>
-        <div className="Header-bot">
+        <div className="header-bot">
             
-            <div className="Logo">
-                <BsQuestionSquare className="Interrogation1"/>
+            <div className="logo">
+                <BsQuestionSquare className="interrogation1"/>
                 <Logo />
-                <BsQuestionSquare className="Interrogation2"/>
+                <BsQuestionSquare className="interrogation2"/>
             </div>
             
-            <input type="text" className="Search" />
-            <input type="button" value="BUSCAR" className="Botao-buscar"/>
+            <input type="text" className="search" />
+            <input type="button" value="BUSCAR" className="botao-buscar"/>
         </div>
     </header>
-    : <header className="Header">
-    <div className="Header-top">
-        <div className="Header-top-text">
-            <a href="" className="Acesso">Acesse sua Conta</a>
-            <p className="Ou">ou</p>
-            <a href="" className="Cadastro">Cadastre-se</a>
+    : <header className="header">
+    <div className="header-top">
+        <div className="header-top-text">
+            <a href="" className="acesso">Acesse sua Conta</a>
+            <p className="ou">ou</p>
+            <a href="" className="cadastro">Cadastre-se</a>
         </div>
     </div>
-    <div className="Header-bot">
-        <div className="Logo">
-            <FiMenu className="Interrogation1"/>
+    <div className="header-bot">
+        <div className="logo">
+            <FiMenu className="interrogation1"/>
             <Logo />
-            <BiCart className="Interrogation2"/>
+            <BiCart className="interrogation2"/>
         </div>
-        <input type="text" className="Search" />
-        <input type="button" value="BUSCAR" className="Botao-buscar"/>
+        <input type="text" className="search" />
+        <input type="button" value="BUSCAR" className="botao-buscar"/>
     </div>
 </header>
 }

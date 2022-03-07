@@ -1,11 +1,11 @@
-.Filtro-preco{
+.filtro-preco{
     margin-left: 587.5px;
     display: flex;
     align-items: center;
     justify-content: end;
 }
 
-.Ordenar{
+.ordenar{
     width: 80px;
     height: 15px;
     margin-right: 13.28px;
@@ -16,7 +16,7 @@
     color: #808185;
 }
 
-.Dropbox{
+.dropbox{
     width: 216px;
     height: 27px;
     font-family: 'Open Sans';
@@ -29,23 +29,23 @@
 
 
 @media screen and (max-width: 1024px) {
-    .Filtro-preco{
+    .filtro-preco{
         margin-left: 365.97px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .Filtro-preco{
+    .filtro-preco{
         margin-left: 132.51px;
     }
 }
 
 @media screen and (max-width: 320px) {
-    .Filtro-preco{
+    .filtro-preco{
         margin-left: 0px;
     }
     
-    .Dropbox{
+    .dropbox{
         width: 198.63px;
     }
 }

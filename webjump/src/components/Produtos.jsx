@@ -4,7 +4,7 @@ import '../style/Produtos.css'
 
 
 export default function({produtos}) {
-    return <div className="Produtos">
+    return <div className="produtos">
         {produtos.map ((produtos) => (<Produto produtos={produtos}/>)) }
     </div>
 }

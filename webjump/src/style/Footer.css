@@ -1,4 +1,4 @@
-.Footer{
+.footer{
     width: 1240px;
     height: 176px;
     margin-left: 101px;
@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .Footer{
+    .footer{
         width: 984px;
         height: 176px;
         margin-left: 20px;
@@ -15,7 +15,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .Footer{
+    .footer{
         width: 729px;
         height: 180px;
         margin-left: 20px;
@@ -23,7 +23,7 @@
 }
 
 @media screen and (max-width: 320px) {
-    .Footer{
+    .footer{
         width: 290px;
         height: 180px;
         margin-left: 15px;

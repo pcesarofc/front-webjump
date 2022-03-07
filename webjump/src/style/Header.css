@@ -1,17 +1,17 @@
-.Header-top{
+.header-top{
     height: 31px;
     background-color: #231F20;
     display: flex;
 }
 
-.Interrogation1, .Interrogation2{
+.interrogation1, .interrogation2{
     align-self: center;
     width: 0px;
     height: 0px;
     visibility: hidden;
 }
 
-.Header-top-text{
+.header-top-text{
     display: flex;
     height: 19px;
     margin-top: 4px;
@@ -19,23 +19,23 @@
     align-items: center;
 }
 
-p.Ou , .Acesso, .Cadastro{
+p.ou , .acesso, .cadastro{
     color: white;
     font-size: 14px;
     margin-inline: 2.48px;
     font-family: 'Open Sans';
 }
 
-.Acesso, .Cadastro{
+.acesso, .cadastro{
     font-weight: 700;
 }
 
-.Header-bot{
+.header-bot{
     height: 114px;
     display: flex;
 }
 
-.Search{
+.search{
     width: 414px;
     height: 42px;
     padding: 0px;
@@ -44,7 +44,7 @@ p.Ou , .Acesso, .Cadastro{
     margin-top: 31px
 }
 
-.Botao-buscar{
+.botao-buscar{
     width: 110px;
     height: 44px;
     background-color: #CB0D1F;
@@ -57,34 +57,34 @@ p.Ou , .Acesso, .Cadastro{
     cursor: pointer;
 }
 
-.Logo{
+.logo{
     align-self: center;
     margin-left: 101px;
 }
 
 @media screen and (max-width: 1024px) {
 
-    .Header-top-text{
+    .header-top-text{
         margin-left: 777px;
     }
 
-    .Header-bot{
+    .header-bot{
         width: 1024px;
         height: 114px;
         display: flex;
     }
 
-    .Logo{
+    .logo{
         align-self: center;
         margin-left: 19px;
     }
 
-    .Search{
+    .search{
         margin-left: 274.53px;
         margin-top: 31px
     }
 
-    .Botao-buscar{
+    .botao-buscar{
         margin-top: 31px;
     }
 }
@@ -92,25 +92,25 @@ p.Ou , .Acesso, .Cadastro{
 
 @media screen and (max-width: 768px) {
 
-    .Header-top-text{
+    .header-top-text{
         margin-left: 521px;
     }
 
-    .Header-bot{
+    .header-bot{
         width: 768px;
         height: 114px;
     }
 
-    .Logo{
+    .logo{
         margin-left: 20px;
     }
 
-    .Search{
+    .search{
         margin-left: 16.53px;
         margin-top: 31px
     }
 
-    .Botao-buscar{
+    .botao-buscar{
         margin-top: 31px;
     }
 }
@@ -118,44 +118,44 @@ p.Ou , .Acesso, .Cadastro{
 
 @media screen and (max-width: 320px) {
 
-    .Header-top{
+    .header-top{
         height: 30px;
     }
 
-    .Interrogation1, .Interrogation2{
+    .interrogation1, .interrogation2{
         visibility: visible;
         width: 29px;
         height: 27px;
     }
 
-    .Interrogation2{
+    .interrogation2{
         color: #CB0D1F;
     }
 
-    .Header-top-text{
+    .header-top-text{
         margin-left: 47px;
     }
 
-    .Header-bot{
+    .header-bot{
         width: 320px;
         height: 114px;
         padding: 0;
     }
 
-    .Logo{
+    .logo{
         margin-left: 16.58px;
         width: 320px;
         justify-content: space-between;
         display: flex;
     }
 
-    .Search{
+    .search{
         visibility: hidden;
         width: 0px;
         height: 0px;
     }
 
-    .Botao-buscar{
+    .botao-buscar{
         visibility: hidden;
         width: 0px;
         height: 0px;

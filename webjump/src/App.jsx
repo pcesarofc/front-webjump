@@ -8,7 +8,7 @@ import Router from './components/Router'
 function App() {
 
   return (
-    <div className="App">
+    <div className="app">
       <BrowserRouter>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>

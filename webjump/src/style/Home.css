@@ -1,8 +1,8 @@
-.Home{
+.home{
     display: flex;
 }
 
-.Caminho-aside{
+.caminho-aside{
     width: 251.22px;
     height: 507px;
     background-color: #E2DEDC;
@@ -10,7 +10,7 @@
     margin-left: 101px;
 }
 
-.Rectangle-header{
+.rectangle-header{
     width: 954px;
     height: 281px;
     background-color: #ACACAC;
@@ -18,7 +18,7 @@
     margin-left: 24.78px
 }
 
-.Title{
+.title{
     width: 210px;
     height: 36px;
     font-size: 26px;
@@ -29,7 +29,7 @@
     font-family: 'Open Sans';
 }
 
-.Text{
+.text{
     width: 951.65px;
     height: 181.42px;
     font-size: 16px;
@@ -42,12 +42,12 @@
     font-family: 'Open Sans';
 }
 
-.Ul-aside{
+.ul-aside{
     font-size: 18px;
     font-family: 'Open Sans';
 }
 
-.Li-aside{
+.li-aside{
     text-decoration: none;
     color: #000000;
 }
@@ -55,31 +55,31 @@
 
 @media screen and (max-width: 1024px) {
 
-    .Home-section, .Home-page{
+    .home-section, .home-page{
         height: 532px;
     }
 
-    .Caminho-aside{
+    .caminho-aside{
         width: 207px;
         height: 483px;
         margin-top: 17px;
         margin-left: 20px;
     }
 
-    .Rectangle-header{
+    .rectangle-header{
         width: 757.81px;
         height: 223.34px;
         margin-top: 17px;
         margin-left: 20.19px
     }
 
-    .Title{
+    .title{
         font-size: 26px;
         margin-left: 18.72px;
         margin-top: 9.15px;
     }
 
-    .Text{
+    .text{
         width: 757.28px;
         height: 247.89px;
         margin-left: 18.71px;
@@ -90,30 +90,30 @@
 
 @media screen and (max-width: 768px) {
 
-    .Caminho-aside{
+    .caminho-aside{
         width: 153.19px;
         height: 357px;
     }
 
-    .Ul-aside{
+    .ul-aside{
         width: 107px;
         height: 99px;
         font-size: 16px;
     }
 
-    .Rectangle-header{
+    .rectangle-header{
         width: 560.84px;
         height: 165.09px;
         margin-left: 14.97px
     }
 
-    .Title{
+    .title{
         font-size: 26px;
         margin-left: 18.53px;
         margin-top: 6.4px;
     }
 
-    .Text{
+    .text{
         width: 553.28px;
         height: 327.6px;
         margin-left: 20.53px;
@@ -123,32 +123,32 @@
 
 @media screen and (max-width: 320px) {
 
-    .Home-section{
+    .home-section{
         width: 320px;
         height: 752px;
     }
 
-    .Caminho-aside{
+    .caminho-aside{
         visibility: hidden;
         width: 0px;
         height: 0px;
         margin: 0px;
     }
     
-    .Rectangle-header{
+    .rectangle-header{
         width: 290px;
         height: 86px;
         margin-top: 0px;
         margin-left: 15px;
     }
 
-    .Title{
+    .title{
         margin-left: 14.72px;
         margin-top: 14.49px;
         margin-bottom: 0px;
     }
 
-    .Text{
+    .text{
         width: 289.28px;
         height: 610.25px;
         margin-block: 0px;

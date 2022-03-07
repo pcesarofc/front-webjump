@@ -1,33 +1,32 @@
-.Sapatos{
+.sapatos{
     width: 1440px;
     height: auto;
 }
-.Corpo{
+.corpo{
     display: flex;
 }
 
 
 @media screen and (max-width: 1024px){
-    .Sapatos{
+    .sapatos{
         width: 1024px;
     }
     
 }
 
 @media screen and (max-width: 768px){
-    .Sapatos{
+    .sapatos{
         width: 768px;
     }
 }
 
 @media screen and (max-width: 320px){
-    .Sapatos{
+    .sapatos{
         width: 320px;
     }
     
-    .Corpo{
+    .corpo{
         display: block;
-    }
-    
+    }    
 }
 

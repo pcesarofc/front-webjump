@@ -3,15 +3,15 @@ import '../style/NumeroPagina.css'
 
 
 export default function () {
-    return <div className="Numero-pagina">
-        <a className="Voltar"> &lt;</a>
-        <div className="Numeros">
-            <a className="Pagina1">1</a>
-            <a className="Pagina1">2</a>
-            <a className="Pagina1">3</a>
-            <a className="Pagina1">4</a>
-            <a className="Pagina1">5</a>
+    return <div className="numero-pagina">
+        <a className="voltar"> &lt;</a>
+        <div className="numeros">
+            <a className="pagina1">1</a>
+            <a className="pagina1">2</a>
+            <a className="pagina1">3</a>
+            <a className="pagina1">4</a>
+            <a className="pagina1">5</a>
         </div>
-        <a className="Avancar"> &gt;</a>
+        <a className="avancar"> &gt;</a>
     </div>
 }

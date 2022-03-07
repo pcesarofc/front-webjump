@@ -6,30 +6,30 @@ import '../style/Navigator.css'
 export default function () {
 
     return <>
-        <nav className="Navigator">
-            <ul className="Nav">
+        <nav className="navigator">
+            <ul className="nav">
                 
-                <li className="Home-nav">
-                    <Link className="Redirecionador" to="/" >
+                <li className="home-nav">
+                    <Link className="redirecionador" to="/" >
                         PÁGINA INICIAL
                     </Link>
                 </li>
-                <li className="Camisetas-nav">
-                    <Link className="Redirecionador" to="/camisetas">
+                <li className="camisetas-nav">
+                    <Link className="redirecionador" to="/camisetas">
                         CAMISETAS
                     </Link>
                 </li>
-                <li className="Calcas-nav">
-                    <Link className="Redirecionador" to="/calcas">
+                <li className="calcas-nav">
+                    <Link className="redirecionador" to="/calcas">
                         CALÇAS
                     </Link>
                 </li>
-                <li className="Sapatos-nav">
-                    <Link className="Redirecionador" to="/sapatos">
+                <li className="sapatos-nav">
+                    <Link className="redirecionador" to="/sapatos">
                         SAPATOS
                     </Link>
                 </li>
-                <li className="Contato-nav">CONTATO</li>
+                <li className="contato-nav">CONTATO</li>
             </ul>
         </nav>
     </>

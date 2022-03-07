@@ -1,4 +1,4 @@
-.Produto{
+.produto{
     width: 212px;
     height: 365px;
     display: flex;
@@ -8,7 +8,7 @@
     margin-right: 35.72px;
 }
 
-.Foto{
+.foto{
     width: 212px;
     height: 233px;
     background-color: white;
@@ -19,14 +19,14 @@
     cursor: pointer;
 }
 
-.Imagem-produto{
+.imagem-produto{
     width: 196.27px;
     height: 215.71px;
     object-fit: scale-down;
     align-self: center;
 }
 
-.Descricao-produto{
+.descricao-produto{
     height: 22px;
     font-family: 'Open Sans';
     font-weight: 300;
@@ -37,7 +37,7 @@
     margin-bottom: 0px
 }
 
-.Precos{
+.precos{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +45,7 @@
     margin-bottom: 9.51px
 }
 
-.Preco-especial{
+.preco-especial{
     height: 20px;
     text-align: center;
     text-decoration: line-through;
@@ -57,7 +57,7 @@
     margin-right: 9px;
 }
 
-.Preco-item{
+.preco-item{
     height: 28px;
     font-family: 'Open Sans';
     font-weight: 800;
@@ -67,7 +67,7 @@
     margin: 0px
 }
 
-.Botao-comprar{
+.botao-comprar{
     width: 210px;
     height: 40px;
     background-color: #00A8A9;
@@ -82,30 +82,28 @@
 
 
 @media screen and (max-width: 1024px){
-
-
-    .Produtos{
+    .produtos{
         width: 752px;
     }
     
-    .Produto{
+    .produto{
         width: 162.97px;
         height: 314px;
         margin-right: 24px;
     }
 
-    .Foto{
+    .foto{
         width: 162.97px;
         height: 179.19px;
         margin-bottom: 11.3px;
     }
     
-    .Imagem-produto{
+    .imagem-produto{
         width: 162.97px;
         height: 179.19px;
     }
     
-    .Botao-comprar{
+    .botao-comprar{
         width: 164px;
         height: 40px;
     }
@@ -113,75 +111,74 @@
 
 @media screen and (max-width: 768px){
     
-    .Produtos{
+    .produtos{
         width: 500px;
     }
-    .Produto{
+    .produto{
         width: 149.66px;
         height: 333px;
         margin-right: 17px;
     }
     
-    .Foto{
+    .foto{
         width: 149.66px;
         height: 165px;
     }
     
-    .Imagem-produto{
+    .imagem-produto{
         width: 149.66px;
         height: 165px;
     }
     
-    .Descricao-produto{
+    .descricao-produto{
         margin-top: 0px;
         margin-bottom: 0px
     }
     
-    .Precos{
+    .precos{
         display: block;
         margin-top: 10px;
     }
     
-    .Botao-comprar{
+    .botao-comprar{
         width: 149.5px;
     }
 
 }
 
 @media screen and (max-width: 320px){
-    .Produtos{
+    .produtos{
         width: 292px;
     }
-    .Produto{
+    .produto{
         width: 132.78px;
         height: 254.49px;
         margin-right: 10px;
     }
     
-    .Foto{
+    .foto{
         width: 132.78px;
         height: 146px;
     }
     
-    .Imagem-produto{
+    .imagem-produto{
         width: 132.78px;
         height: 146px;
     }
     
-    .Descricao-produto{
+    .descricao-produto{
         margin-top: 0px;
         margin-bottom: 0px
     }
     
-    .Produtos{
+    .produtos{
         margin-top: 50px;
     }
     
-    .Botao-comprar{
+    .botao-comprar{
         visibility: hidden;
         width: 0px;
         height: 0px;
         padding: 0px;
-
     }
 }

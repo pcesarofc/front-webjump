@@ -53,20 +53,19 @@ export default function () {
                     specialPrice: specialPrice
                 }]
             }
-            //console.log(response.data.items[1].filter[0].color)
             setprodutos(novosProdutos)
         })
     }, [])
 
-    return <section  className="Catalogo-produtos">
-        <h1 className="Titulo-produto" >{descricao}</h1>
-        <div className="Borda"/>
-        <div className="Filters">
-            <BsFillGrid3X3GapFill className="Grade"/>
-            <FaList className="List"/>
+    return <section  className="catalogo-produtos">
+        <h1 className="titulo-produto" >{descricao}</h1>
+        <div className="borda"/>
+        <div className="filters">
+            <BsFillGrid3X3GapFill className="grade"/>
+            <FaList className="list"/>
             <FiltroPreco/>
         </div>
-        <div className="Container-catalogo">
+        <div className="container-catalogo">
             <Produtos produtos={produtos}/>
         </div>
     </section>
