@@ -1,5 +1,5 @@
-import React from "react";
-import '../style/Filtro.css';
+import React from "react"
+import '../style/Filtro.css'
 
 export default function () {
     return <aside className="aside-filter">

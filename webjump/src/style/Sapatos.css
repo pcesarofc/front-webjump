@@ -2,7 +2,7 @@
     width: 1440px;
     height: auto;
 }
-.container-catalog{
+.container-products{
     display: flex;
 }
 
@@ -25,7 +25,7 @@
         width: 320px;
     }
     
-    .container-catalog{
+    .container-products{
         display: block;
     }    
 }

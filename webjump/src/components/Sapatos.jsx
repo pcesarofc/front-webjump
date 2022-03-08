@@ -9,7 +9,7 @@ import NumeroPagina from "./NumeroPagina";
 export default function () {
     return <div className="body-products">
         <Indice indice={'Sapatos'}/>
-        <div className="container-catalog">
+        <div className="container-products">
             <Filtro />
             <Catalogo/>
         </div>

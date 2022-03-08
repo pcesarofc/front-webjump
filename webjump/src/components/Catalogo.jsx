@@ -1,10 +1,10 @@
-import React from "react";
+import React from "react"
 import '../style/Catalogo.css'
 import Produtos from './Produtos'
 import axios from 'axios'
-import { useEffect } from "react";
-import FiltroPreco from "./FiltroPreco";
-import { useLocation } from "react-router-dom";
+import { useEffect } from "react"
+import FiltroPreco from "./FiltroPreco"
+import { useLocation } from "react-router-dom"
 import { FaList } from "react-icons/fa"
 import { BsFillGrid3X3GapFill } from 'react-icons/bs'
 
@@ -63,7 +63,7 @@ export default function () {
         <div className="filters">
             <BsFillGrid3X3GapFill className="grid"/>
             <FaList className="list"/>
-            <FiltroPreco/>
+            <FiltroPreco />
         </div>
         <div className="container-catalog">
             <Produtos produtos={produtos}/>

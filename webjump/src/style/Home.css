@@ -26,7 +26,6 @@
     margin-left: 24.5px;
     margin-top: 14.49px;
     margin-bottom: 0px;
-    font-family: 'Open Sans';
 }
 
 .text{
@@ -39,17 +38,19 @@
     margin-bottom: 12.69px;
     color: #000000;
     line-height: 19.2px;
-    font-family: 'Open Sans';
 }
 
 .ul-aside{
     font-size: 18px;
-    font-family: 'Open Sans';
 }
 
 .li-aside{
     text-decoration: none;
     color: #000000;
+}
+
+.li-aside:hover{
+    font-weight: 700;
 }
 
 

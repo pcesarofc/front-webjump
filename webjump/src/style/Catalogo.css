@@ -6,14 +6,12 @@
     margin-top: 15px;
     margin-left: 22.72px;
     margin-bottom: 6.51px;
-    font-family: 'Open Sans';
     font-weight: 300;
-    color: #ED1A39;
+    color: #ED1A39
 }
 
 .container-catalog{
     width: 1000px;
-    height: auto;
     margin-left: 25px;
     margin-bottom: 30px
 }
@@ -22,23 +20,31 @@
     width: 955px;
     height: 1px;
     background-color: #E2DEDC;
-    margin-left: 24px;
+    margin-left: 24px
 }
 
 .grid, .list{
     height: 20px;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .grid{
     width: 20px;
-    color: #ED1A39;
+    color: #00A8A9
+}
+
+.grid:hover{
+    color: #ED1A39
 }
 
 .list{
     width: 24.62px;
     margin-left: 11.61px;
-    color: #00A8A9;
+    color: #00A8A9
+}
+
+.list:hover{
+    color: #ED1A39
 }
 
 .filters{
@@ -50,53 +56,55 @@
     margin-top: 8px
 }
 
-
 @media screen and (max-width: 1024px){
     .container-catalog, .products-catalog{
-        width: 768px;
+        width: 768px
     }
 
     .container-catalog{
-        width: 752px;
+        width: 752px
     }
 
     .border{
-        width: 733px;
+        width: 733px
     }
 }
 
 @media screen and (max-width: 768px){
     .container-catalog, .products-catalog{
-        width: 504px;
+        width: 504px
     }
+
     .container-catalog{
-        margin-bottom: 25px;
+        margin-bottom: 25px
     }
+
     .border{
-        width: 496px;
+        width: 496px
     }
 }
 
 @media screen and (max-width: 320px){
     
     .products-catalog{
-        width: 320px;
+        width: 320px
     }
+
     .container-catalog{
         width: 292.2px;
-        margin-left: 16.25px;
+        margin-left: 16.25px
     }
     
     .border{
         visibility: hidden;
         width: 0px;
-        height: 0px;
+        height: 0px
     }
 
     .grid, .list{
         visibility: hidden;
         height: 0px;
-        width: 0px;
+        width: 0px
     }
 
     .filters{

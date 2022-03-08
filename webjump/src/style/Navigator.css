@@ -2,7 +2,6 @@
     background-color: #CB0D1F;
     height: 54px;
 }
-
 .nav-container{
     height: 100%;
     padding: 0%;
@@ -12,90 +11,73 @@
     display: flex;
     align-items: center;
 }
-
 .home-nav, .shirts-nav, .pants-nav, .shoes-nav, .contact-nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 16px;
-    font-family: 'Open Sans';
     font-weight: 800;
 }
-
 .home-nav{
     height: 22px;
     text-align: center;
     margin-left: 103px;
 }
-
 .shirts-nav{
     height: 22px;
     margin-left: 75px;
     text-align: center;
 }
-
 .pants-nav{
     height: 22px;
     margin-left: 107px;
     text-align: center;
 }
-
 .shoes-nav{
     height: 22px;
     margin-left: 116px;
     text-align: center;
 }
-
 .contact-nav{
     height: 22px;
     margin-left: 110px;
     text-align: center;
 }
-
 .redirect{
     text-decoration: none;
     color: white;
 }
-
 @media screen and (max-width: 1024px) {
     .home-nav{
         margin-left: 20.53px;
     }
 }
-
 @media screen and (max-width: 768px) {
     .home-nav{
         margin-left: 20.53px;
     }
-
     .shirts-nav{
         margin-left: 46px;
     }
-    
     .pants-nav{
         margin-left: 78px;
     }
-    
     .shoes-nav{
         margin-left: 88px;
     }
-    
     .contact-nav{
         margin-left: 80px;
     }
 }
-
 @media screen and (max-width: 320px) {
     .navigator{
         visibility: hidden;
         width: 0px;
         height: 0px;
     }
-
     .nav, .contact-nav, .home-nav, .pants-nav, .shirts-nav, .capatos-nav{
         visibility: hidden;
         width: 0px;
         height: 0px;
     }
-    
 }

@@ -14,7 +14,6 @@
     margin-top: 13.49px;
     margin-bottom: 0px;
     font-size: 24px;
-    font-family: 'Open Sans';
     font-weight: 700;
     text-align: left;
     color: #ED1A39;
@@ -28,7 +27,6 @@
     color: #1E2B50;
     font-size: 18px;
     text-align: left;
-    font-family: 'Open Sans';
     font-weight: 700;
 }
 
@@ -41,7 +39,6 @@
     color: #1E2B50;
     font-size: 18px;
     text-align: left;
-    font-family: 'Open Sans';
     font-weight: 700;
 }
 
@@ -52,11 +49,14 @@
 }
 
 .filter-list{
-    font-family: 'Open Sans';
     font-size: 16px;
     text-align: left;
     color: #626262;
     cursor: pointer;
+}
+
+.filter-list:hover{
+    font-weight: 700;
 }
 
 .colors{
@@ -94,7 +94,6 @@
     color: #1E2B50;
     font-size: 18px;
     text-align: left;
-    font-family: 'Open Sans';
     font-weight: 700;
 }
 

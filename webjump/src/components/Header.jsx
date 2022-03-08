@@ -1,9 +1,9 @@
-import React from "react";
+import React from "react"
 import '../style/Header.css'
-import Logo from "./Logo";
-import { BsQuestionSquare } from "react-icons/bs";
-import { FiMenu } from "react-icons/fi";
-import { useLocation } from "react-router-dom";
+import Logo from "./Logo"
+import { BsQuestionSquare } from "react-icons/bs"
+import { FiMenu } from "react-icons/fi"
+import { useLocation } from "react-router-dom"
 import { BiCart } from "react-icons/bi"
 
 
@@ -15,7 +15,7 @@ export default function () {
         <div className="header-top">
             <div className="header-top-text">
                 <a href="" className="acess">Acesse sua Conta</a>
-                <p className="ou">ou</p>
+                <p className="or">ou</p>
                 <a href="" className="register">Cadastre-se</a>
             </div>
         </div>
