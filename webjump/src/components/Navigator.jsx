@@ -3,9 +3,8 @@ import { Link } from "react-router-dom"
 import '../style/Navigator.css'
 
 
-export default function () {
-
-    return <>
+export default () => (
+    <>
         <nav className="navigator">
             <ul className="nav-container">
                 <li className="home-nav">
@@ -32,4 +31,4 @@ export default function () {
             </ul>
         </nav>
     </>
-}
+)

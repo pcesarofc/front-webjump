@@ -1,9 +1,8 @@
 import React from "react"
 import '../style/NumeroPagina.css'
 
-
-export default function () {
-    return <div className="numbers-page">
+export default () => (
+    <div className="numbers-page">
         <a className="back-button"> &lt;</a>
         <div className="number">
             <a className="page-1">1</a>
@@ -14,4 +13,4 @@ export default function () {
         </div>
         <a className="forward-button"> &gt;</a>
     </div>
-}
+)

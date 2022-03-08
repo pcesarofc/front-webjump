@@ -1,8 +1,8 @@
 import React from "react"
 import '../style/Filtro.css'
 
-export default function () {
-    return <aside className="aside-filter">
+export default () => ( 
+    <aside className="aside-filter">
         <p className="filter-title">FILTRE POR</p>
         <p className="categories">CATEGORIAS</p>
         <ul className="categories-filter">
@@ -23,5 +23,5 @@ export default function () {
             <li className="filter-list">Casual</li>
             <li className="filter-list">Social</li>
         </ul>
-</aside>
-}
+    </aside>
+)

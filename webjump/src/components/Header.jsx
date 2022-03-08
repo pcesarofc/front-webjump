@@ -1,10 +1,10 @@
 import React from "react"
-import '../style/Header.css'
 import Logo from "./Logo"
 import { BsQuestionSquare } from "react-icons/bs"
 import { FiMenu } from "react-icons/fi"
 import { useLocation } from "react-router-dom"
 import { BiCart } from "react-icons/bi"
+import '../style/Header.css'
 
 
 export default function () {

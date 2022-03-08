@@ -1,13 +1,13 @@
 import React from "react"
-import '../style/Sapatos.css'
-import Catalogo from "./Catalogo"
-import Filtro from "./Filtro"
 import Indice from "./Indice"
-import Footer from './Footer'
+import Filtro from "./Filtro"
+import Catalogo from "./Catalogo"
 import NumeroPagina from "./NumeroPagina"
+import Footer from './Footer'
+import '../style/Sapatos.css'
 
-export default function () {
-    return <div className="body-products">
+export default () => (
+    <div className="body-products">
         <Indice indice={'Camisetas'}/>
         <div className="container-products">
             <Filtro/>
@@ -16,4 +16,5 @@ export default function () {
         <NumeroPagina/>
         <Footer/>
     </div>
-}
+) 
+

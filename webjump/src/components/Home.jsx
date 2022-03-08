@@ -1,11 +1,11 @@
 import React from "react"
-import '../style/Home.css'
 import Footer from "./Footer"
 import { Link } from "react-router-dom"
+import '../style/Home.css'
 
 
-export default function () {
-    return <div className="home-page">
+export default () => (
+    <div className="home-page">
         <div className="home">
             <aside className="path-aside">
                 <ul className="ul-aside">
@@ -42,4 +42,4 @@ export default function () {
         </div>
         <Footer/>
     </div>
-}
+)
