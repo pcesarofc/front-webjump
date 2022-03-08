@@ -2,7 +2,7 @@
     display: flex;
 }
 
-.caminho-aside{
+.path-aside{
     width: 251.22px;
     height: 507px;
     background-color: #E2DEDC;
@@ -59,7 +59,7 @@
         height: 532px;
     }
 
-    .caminho-aside{
+    .path-aside{
         width: 207px;
         height: 483px;
         margin-top: 17px;
@@ -90,7 +90,7 @@
 
 @media screen and (max-width: 768px) {
 
-    .caminho-aside{
+    .path-aside{
         width: 153.19px;
         height: 357px;
     }
@@ -128,7 +128,7 @@
         height: 752px;
     }
 
-    .caminho-aside{
+    .path-aside{
         visibility: hidden;
         width: 0px;
         height: 0px;

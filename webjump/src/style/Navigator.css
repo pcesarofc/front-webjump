@@ -3,7 +3,7 @@
     height: 54px;
 }
 
-ul.nav{
+.nav-container{
     height: 100%;
     padding: 0%;
     margin: 0px;
@@ -13,7 +13,7 @@ ul.nav{
     align-items: center;
 }
 
-.home-nav, .camisetas-nav, .calcas-nav, .sapatos-nav, .contato-nav{
+.home-nav, .shirts-nav, .pants-nav, .shoes-nav, .contact-nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,31 +28,31 @@ ul.nav{
     margin-left: 103px;
 }
 
-.camisetas-nav{
+.shirts-nav{
     height: 22px;
     margin-left: 75px;
     text-align: center;
 }
 
-.calcas-nav{
+.pants-nav{
     height: 22px;
     margin-left: 107px;
     text-align: center;
 }
 
-.sapatos-nav{
+.shoes-nav{
     height: 22px;
     margin-left: 116px;
     text-align: center;
 }
 
-.contato-nav{
+.contact-nav{
     height: 22px;
     margin-left: 110px;
     text-align: center;
 }
 
-a.redirecionador{
+.redirect{
     text-decoration: none;
     color: white;
 }
@@ -68,19 +68,19 @@ a.redirecionador{
         margin-left: 20.53px;
     }
 
-    .camisetas-nav{
+    .shirts-nav{
         margin-left: 46px;
     }
     
-    .calcas-nav{
+    .pants-nav{
         margin-left: 78px;
     }
     
-    .sapatos-nav{
+    .shoes-nav{
         margin-left: 88px;
     }
     
-    .contato-nav{
+    .contact-nav{
         margin-left: 80px;
     }
 }
@@ -92,7 +92,7 @@ a.redirecionador{
         height: 0px;
     }
 
-    .nav, .contato-nav, .home-nav, .calcas-nav, .camisetas-nav, .capatos-nav{
+    .nav, .contact-nav, .home-nav, .pants-nav, .shirts-nav, .capatos-nav{
         visibility: hidden;
         width: 0px;
         height: 0px;

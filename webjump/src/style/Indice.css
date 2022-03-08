@@ -1,4 +1,4 @@
-.indice{
+.index-indicator{
     width: 170px;
     height: 19px;
     margin-left: 99.36px;
@@ -6,7 +6,7 @@
     font-family: 'Open Sans';
 }
 
-.indice-home{
+.index-home{
     width: 152px;
     height: 19px;
     font-size: 14px;
@@ -15,26 +15,26 @@
     text-decoration: none;
 }
 
-.maior{
+.bigger{
     font-size: 14px;
     color: #ACACAC;
     text-decoration: none;
 }
 
-.indice-second{
+.index-second{
     font-size: 14px;
     text-decoration: none;
     color: #CB0D1F;
 }
 
 @media screen and (max-width: 1024px){
-    .indice{
+    .index{
         margin-left: 18.72px;
     }
 }
 
 @media screen and (max-width: 320px){
-    .indice{
+    .index{
         margin-left: 13.72px;
     }    
 }

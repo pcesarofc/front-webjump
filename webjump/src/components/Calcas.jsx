@@ -7,9 +7,9 @@ import Footer from './Footer'
 import NumeroPagina from "./NumeroPagina";
 
 export default function () {
-    return <div className="sapatos">
+    return <div className="body-products">
         <Indice indice={'Calças'}/>
-        <div className="corpo">
+        <div className="container-catalog">
             <Filtro/>
             <Catalogo/>
         </div>

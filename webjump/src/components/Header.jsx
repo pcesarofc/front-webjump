@@ -14,9 +14,9 @@ export default function () {
     return (location.pathname == '/') ? <header className="header">
         <div className="header-top">
             <div className="header-top-text">
-                <a href="" className="acesso">Acesse sua Conta</a>
+                <a href="" className="acess">Acesse sua Conta</a>
                 <p className="ou">ou</p>
-                <a href="" className="cadastro">Cadastre-se</a>
+                <a href="" className="register">Cadastre-se</a>
             </div>
         </div>
         <div className="header-bot">
@@ -28,15 +28,15 @@ export default function () {
             </div>
             
             <input type="text" className="search" />
-            <input type="button" value="BUSCAR" className="botao-buscar"/>
+            <input type="button" value="BUSCAR" className="button-search"/>
         </div>
     </header>
     : <header className="header">
     <div className="header-top">
         <div className="header-top-text">
-            <a href="" className="acesso">Acesse sua Conta</a>
-            <p className="ou">ou</p>
-            <a href="" className="cadastro">Cadastre-se</a>
+            <a href="" className="acess">Acesse sua Conta</a>
+            <p className="or">ou</p>
+            <a href="" className="register">Cadastre-se</a>
         </div>
     </div>
     <div className="header-bot">
@@ -46,7 +46,7 @@ export default function () {
             <BiCart className="interrogation2"/>
         </div>
         <input type="text" className="search" />
-        <input type="button" value="BUSCAR" className="botao-buscar"/>
+        <input type="button" value="BUSCAR" className="button-search"/>
     </div>
 </header>
 }

@@ -57,15 +57,15 @@ export default function () {
         })
     }, [])
 
-    return <section  className="catalogo-produtos">
-        <h1 className="titulo-produto" >{descricao}</h1>
-        <div className="borda"/>
+    return <section  className="products-catalog">
+        <h1 className="title-product" >{descricao}</h1>
+        <div className="border"/>
         <div className="filters">
-            <BsFillGrid3X3GapFill className="grade"/>
+            <BsFillGrid3X3GapFill className="grid"/>
             <FaList className="list"/>
             <FiltroPreco/>
         </div>
-        <div className="container-catalogo">
+        <div className="container-catalog">
             <Produtos produtos={produtos}/>
         </div>
     </section>

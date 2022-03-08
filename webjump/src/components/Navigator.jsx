@@ -7,29 +7,28 @@ export default function () {
 
     return <>
         <nav className="navigator">
-            <ul className="nav">
-                
+            <ul className="nav-container">
                 <li className="home-nav">
-                    <Link className="redirecionador" to="/" >
+                    <Link className="redirect" to="/" >
                         PÁGINA INICIAL
                     </Link>
                 </li>
-                <li className="camisetas-nav">
-                    <Link className="redirecionador" to="/camisetas">
+                <li className="shirts-nav">
+                    <Link className="redirect" to="/camisetas">
                         CAMISETAS
                     </Link>
                 </li>
-                <li className="calcas-nav">
-                    <Link className="redirecionador" to="/calcas">
+                <li className="pants-nav">
+                    <Link className="redirect" to="/calcas">
                         CALÇAS
                     </Link>
                 </li>
-                <li className="sapatos-nav">
-                    <Link className="redirecionador" to="/sapatos">
+                <li className="shoes-nav">
+                    <Link className="redirect" to="/sapatos">
                         SAPATOS
                     </Link>
                 </li>
-                <li className="contato-nav">CONTATO</li>
+                <li className="contact-nav">CONTATO</li>
             </ul>
         </nav>
     </>

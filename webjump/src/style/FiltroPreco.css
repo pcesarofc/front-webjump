@@ -1,11 +1,11 @@
-.filtro-preco{
+.price-filter{
     margin-left: 587.5px;
     display: flex;
     align-items: center;
     justify-content: end;
 }
 
-.ordenar{
+.order{
     width: 80px;
     height: 15px;
     margin-right: 13.28px;
@@ -29,19 +29,19 @@
 
 
 @media screen and (max-width: 1024px) {
-    .filtro-preco{
+    .price-filter{
         margin-left: 365.97px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .filtro-preco{
+    .price-filter{
         margin-left: 132.51px;
     }
 }
 
 @media screen and (max-width: 320px) {
-    .filtro-preco{
+    .price-filter{
         margin-left: 0px;
     }
     

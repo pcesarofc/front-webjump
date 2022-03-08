@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function () {
     return <div className="home-page">
         <div className="home">
-            <aside className="caminho-aside">
+            <aside className="path-aside">
                 <ul className="ul-aside">
                     <li className="li-aside">
                         <Link className="li-aside" to="/" >

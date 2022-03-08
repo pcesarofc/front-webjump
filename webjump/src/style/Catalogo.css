@@ -1,4 +1,4 @@
-.titulo-produto{
+.title-product{
     width: 119px;
     height: 43px;
     font-size: 32px;
@@ -11,26 +11,26 @@
     color: #ED1A39;
 }
 
-.container-catalogo{
+.container-catalog{
     width: 1000px;
     height: auto;
     margin-left: 25px;
     margin-bottom: 30px
 }
 
-.borda{
+.border{
     width: 955px;
     height: 1px;
     background-color: #E2DEDC;
     margin-left: 24px;
 }
 
-.grade, .list{
+.grid, .list{
     height: 20px;
     cursor: pointer;
 }
 
-.grade{
+.grid{
     width: 20px;
     color: #ED1A39;
 }
@@ -52,48 +52,48 @@
 
 
 @media screen and (max-width: 1024px){
-    .container-catalogo, .catalogo-produtos{
+    .container-catalog, .products-catalog{
         width: 768px;
     }
 
-    .container-catalogo{
-        width: 740px;
+    .container-catalog{
+        width: 752px;
     }
 
-    .borda{
+    .border{
         width: 733px;
     }
 }
 
 @media screen and (max-width: 768px){
-    .container-catalogo, .catalogo-produtos{
+    .container-catalog, .products-catalog{
         width: 504px;
     }
-    .container-catalogo{
+    .container-catalog{
         margin-bottom: 25px;
     }
-    .borda{
+    .border{
         width: 496px;
     }
 }
 
 @media screen and (max-width: 320px){
     
-    .catalogo-produtos{
+    .products-catalog{
         width: 320px;
     }
-    .container-catalogo{
+    .container-catalog{
         width: 292.2px;
         margin-left: 16.25px;
     }
     
-    .borda{
+    .border{
         visibility: hidden;
         width: 0px;
         height: 0px;
     }
 
-    .grade, .list{
+    .grid, .list{
         visibility: hidden;
         height: 0px;
         width: 0px;

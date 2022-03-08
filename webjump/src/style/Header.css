@@ -19,14 +19,14 @@
     align-items: center;
 }
 
-p.ou , .acesso, .cadastro{
+.or , .acess, .register{
     color: white;
     font-size: 14px;
     margin-inline: 2.48px;
     font-family: 'Open Sans';
 }
 
-.acesso, .cadastro{
+.acess, .register{
     font-weight: 700;
 }
 
@@ -44,7 +44,7 @@ p.ou , .acesso, .cadastro{
     margin-top: 31px
 }
 
-.botao-buscar{
+.button-search{
     width: 110px;
     height: 44px;
     background-color: #CB0D1F;
@@ -84,7 +84,7 @@ p.ou , .acesso, .cadastro{
         margin-top: 31px
     }
 
-    .botao-buscar{
+    .button-search{
         margin-top: 31px;
     }
 }
@@ -110,7 +110,7 @@ p.ou , .acesso, .cadastro{
         margin-top: 31px
     }
 
-    .botao-buscar{
+    .button-search{
         margin-top: 31px;
     }
 }
@@ -155,7 +155,7 @@ p.ou , .acesso, .cadastro{
         height: 0px;
     }
 
-    .botao-buscar{
+    .button-search{
         visibility: hidden;
         width: 0px;
         height: 0px;

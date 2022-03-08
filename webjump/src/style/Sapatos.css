@@ -1,31 +1,31 @@
-.sapatos{
+.body-products{
     width: 1440px;
     height: auto;
 }
-.corpo{
+.container-catalog{
     display: flex;
 }
 
 
 @media screen and (max-width: 1024px){
-    .sapatos{
+    .body-products{
         width: 1024px;
     }
     
 }
 
 @media screen and (max-width: 768px){
-    .sapatos{
+    .body-products{
         width: 768px;
     }
 }
 
 @media screen and (max-width: 320px){
-    .sapatos{
+    .body-products{
         width: 320px;
     }
     
-    .corpo{
+    .container-catalog{
         display: block;
     }    
 }

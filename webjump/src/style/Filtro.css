@@ -1,4 +1,4 @@
-aside.filtros{
+.aside-filter{
     width: 261px;
     height: 474px;
     background-color: white;
@@ -20,7 +20,7 @@ aside.filtros{
     color: #ED1A39;
 }
 
-.categorias{
+.categories{
     height: 24px;
     margin-left: 17.72px;
     margin-top: 14px;
@@ -32,7 +32,7 @@ aside.filtros{
     font-weight: 700;
 }
 
-.cores-text{
+.colors-text{
     height: 24px;
     margin-left: 17.72px;
     margin-top: 38.94px;
@@ -45,7 +45,7 @@ aside.filtros{
     font-weight: 700;
 }
 
-.categorias-filter{
+.categories-filter{
     width: 90px;
     height: 70px;
     margin-top: 11.06px;
@@ -59,7 +59,7 @@ aside.filtros{
     cursor: pointer;
 }
 
-.cores{
+.colors{
     display: flex;
 }
 
@@ -85,7 +85,7 @@ aside.filtros{
     margin-left: 3px;
 }
 
-.tipo-text{
+.type-text{
     height: 24px;
     margin-left: 17.72px;
     margin-top: 32.49px;
@@ -98,7 +98,7 @@ aside.filtros{
     font-weight: 700;
 }
 
-.tipo{
+.type{
     width: 95px;
     height: 94px;
     margin-top: 15.06px;
@@ -110,7 +110,7 @@ aside.filtros{
     .filters{
         width: 744px;
     }
-    aside.filtros{
+    .aside-filter{
         width: 226px;
         margin-left: 20px;
     }
@@ -121,7 +121,7 @@ aside.filtros{
         width: 504px;
     }
     
-    aside.filtros{
+    .aside-filter{
         width: 207px;
     }
 }
@@ -131,7 +131,7 @@ aside.filtros{
     .filters{
         width: 304px;
     }
-    aside.filtros{
+    .aside-filter{
         width: 290px;
         margin-left: 15px;
     }

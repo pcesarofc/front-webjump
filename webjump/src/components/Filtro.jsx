@@ -2,22 +2,22 @@ import React from "react";
 import '../style/Filtro.css';
 
 export default function () {
-    return <aside className="filtros">
+    return <aside className="aside-filter">
         <p className="filter-title">FILTRE POR</p>
-        <p className="categorias">CATEGORIAS</p>
-        <ul className="categorias-filter">
+        <p className="categories">CATEGORIAS</p>
+        <ul className="categories-filter">
             <li className="filter-list">Roupas</li>
             <li className="filter-list">Sapatos</li>
             <li className="filter-list">Acessórios</li> 
         </ul>
-        <p className="cores-text">CORES</p>
-        <div className="cores">
+        <p className="colors-text">CORES</p>
+        <div className="colors">
             <div className="red"/>
             <div className="orange"/>
             <div className="aqua"/>
         </div>
-        <p className="tipo-text">TIPO</p>
-        <ul className="tipo">
+        <p className="type-text">TIPO</p>
+        <ul className="type">
             <li className="filter-list">Corrida</li>
             <li className="filter-list">Caminhada</li>
             <li className="filter-list">Casual</li>

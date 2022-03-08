@@ -1,4 +1,4 @@
-.numero-pagina{
+.numbers-page{
     display: flex;
     align-items: center;
     width: 193.11px;
@@ -7,7 +7,7 @@
     margin-bottom: 27px
 }
 
-.numeros{
+.number{
     display: flex;
     width: 124px;
     height: 22px;
@@ -15,43 +15,43 @@
     cursor: pointer;
 }
 
-.pagina1{
+.page-1{
     font-size: 16px;
     font-family: 'Open Sans';
     text-align: center;
     color: #626262;
 }
 
-.voltar, .avancar{
+.back-button, .forward-button{
     width: 11.11px;
     height: 18px;
     color: #00A8A9;
     cursor: pointer;
 }
 
-.voltar{
+.back-button{
     margin-right: 23.44px;
 }
 
-.avancar{
+.forward-button{
     margin-left: 23.44px;
 }
 
 
 @media screen and (max-width: 1024px){
-    .numero-pagina{
+    .numbers-page{
         margin-left: 545.72px;
     }
 }
 
 @media screen and (max-width: 768px){
-    .numero-pagina{
+    .numbers-page{
         margin-left: 384px;
     }
 }
 
 @media screen and (max-width: 320px){
-    .numero-pagina{
+    .numbers-page{
         margin-left: 64.1px;
         margin-bottom: 25px;
     }
