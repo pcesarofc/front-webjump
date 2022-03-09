@@ -1,43 +1,38 @@
 @import '../../sass/abstract/variables';
 
 .title-product{
-    width: 119px;
-    height: 43px;
+    @include dimensions(119px, 43px);
+    @include margins(15px, 6.51px, 22.72px, 0px);
     font-size: 32px;
-    margin-top: 15px;
-    margin-left: 22.72px;
-    margin-bottom: 6.51px;
     font-weight: map-get($webfont-weight, "regular");
     color: $webfatorial-titles
 }
 
 .border{
-    width: 955px;
-    height: 1px;
+    @include dimensions(955px, 1px);
+    @include margins(0px, 0px, 24px, 0px);
     background-color: $webfatorial-gray1;
-    margin-left: 24px
 }
 
 .filters{
     display: flex;
-    margin-left: 24px;
     align-items: center;
-    margin-bottom: 42px;
-    margin-top: 8px;
+    @include margins(8px, 42px, 24px, 0px);
     
     .grid{
-        width: 20px;
-        color: $webfatorial-titles
+        @include dimensions(20px, 20px);
+        color: $webfatorial-titles;
+        cursor: pointer;
+        
+        &:hover{
+            color: $webfatorial-titles !important
+        }
     }
     
     .list{
-        width: 24.62px;
-        margin-left: 11.61px;
-        color: $webfatorial-buttons
-    }
-    
-    .grid, .list{
-        height: 20px;
+        @include dimensions(24.62px, 20px);
+        @include margins(0px, 0px, 11.61px, 0px);
+        color: $webfatorial-buttons;
         cursor: pointer;
         
         &:hover{
@@ -47,36 +42,35 @@
 }
 
 .container-catalog{
-    width: 1000px;
-    margin-left: 25px;
-    margin-bottom: 30px
+    @include dimensions(1000px, auto);
+    @include margins(0px, 30px, 25px, 0px);
 }
 
 @media screen and (max-width: 1024px){
     .products-catalog{
-        width: 768px
+        @include dimensions(768px, auto);
     }
 
     .container-catalog{
-        width: 752px
+        @include dimensions(752px, auto);
     }
 
     .border{
-        width: 733px
+        @include dimensions(733px, auto);
     }
 }
 
 @media screen and (max-width: 768px){
     .products-catalog{
-        width: 538px;
+        @include dimensions(538px, auto);
 
         .border{
-            width: 496px
+            @include dimensions(496px, auto);
         }
 
         .container-catalog{
-            width: 504px;
-            margin-bottom: 25px
+            @include dimensions(504px, auto);
+            @include margins(0px, 25px, 25px, 0px);
         }
     }
 }
@@ -84,35 +78,24 @@
 @media screen and (max-width: 320px){
     
     .products-catalog{
-        width: 320px;
+        @include dimensions(320px, auto);
 
         .border{
-            visibility: hidden;
-            width: 0px;
-            height: 0px;
-            margin: 0px;
-            padding: 0px;
-            border: 0px
+            @include invisible(hidden, 0px)
         }
     
         .container-catalog{
-            width: 292.2px;
-            margin-left: 16.25px
+            @include dimensions(292.2px, auto);
+            @include margins(0px, 25px, 16.25px, 0px);
+
         }
     
         .filters{
-            width: 302px;
-            height: 27px;
-            margin-bottom: 50px;
-            margin-left: 16.74px;
+            @include dimensions(302px, 27px);
+            @include margins(8px, 50px, 16.74px, 0px);
             
             .grid, .list{
-                visibility: hidden;
-                height: 0px;
-                width: 0px;
-                padding: 0px;
-                margin: 0px;
-                border: 0px
+                @include invisible(hidden, 0px)
             }
         }
     }

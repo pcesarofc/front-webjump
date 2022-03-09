@@ -5,11 +5,9 @@
 }
 
 .path-aside{
-    width: 251.22px;
-    height: 507px;
+    @include dimensions(251.22px, 507px);
+    @include margins(24px, 0px, 101px, 0px);
     background-color: #E2DEDC;
-    margin-top: 24px;
-    margin-left: 101px;
 
     .ul-aside{
         font-size: 18px;
@@ -26,31 +24,21 @@
 }
 
 .rectangle-header{
-    width: 954px;
-    height: 281px;
+    @include dimensions(954px, 281px);
+    @include margins(24px, 0px, 24.78px, 0px);
     background-color: #ACACAC;
-    margin-top: 24px;
-    margin-left: 24.78px
 }
 
 .title{
-    width: 210px;
-    height: 36px;
+    @include dimensions(210px, 36px);
+    @include margins(14.49px, 0px, 24.5px, 0px);
     font-size: 26px;
-    text-align: left;
-    margin-left: 24.5px;
-    margin-top: 14.49px;
-    margin-bottom: 0px;
 }
 
 .text{
-    width: 951.65px;
-    height: 181.42px;
+    @include dimensions(951.65px, 181.42px);
+    @include margins(5.4px, 12.69px, 24.5px, 0px);
     font-size: 16px;
-    text-align: left;
-    margin-top: 5.4px;
-    margin-left: 24.5px;
-    margin-bottom: 12.69px;
     color: #000000;
     line-height: 19.2px;
 }
@@ -64,30 +52,22 @@
     }
 
     .path-aside{
-        width: 207px;
-        height: 483px;
-        margin-top: 17px;
-        margin-left: 20px;
+        @include dimensions(207px, 483px);
+        @include margins(17px, 0px, 20px, 0px);
     }
 
     .rectangle-header{
-        width: 757.81px;
-        height: 223.34px;
-        margin-top: 17px;
-        margin-left: 20.19px
+        @include dimensions(757.81px, 223.34px);
+        @include margins(17px, 0px, 20.19px, 0px);
     }
 
     .title{
-        font-size: 26px;
-        margin-left: 18.72px;
-        margin-top: 9.15px;
+        @include margins(9.15px, 0px, 18.72px, 0px);
     }
 
     .text{
-        width: 757.28px;
-        height: 247.89px;
-        margin-left: 18.71px;
-        margin-bottom: 0px;
+        @include dimensions(757.28px, 247.89px);
+        @include margins(5.4px, 12.69px, 18.71px, 0px);
     }
 }
 
@@ -95,32 +75,26 @@
 @media screen and (max-width: 768px) {
 
     .path-aside{
-        width: 153.19px;
-        height: 357px;
+        @include dimensions(153.19px, 357px);
 
         .ul-aside{
-            width: 107px;
-            height: 99px;
+            @include dimensions(107px, 99px);
             font-size: 16px;
         }
     }
 
     .rectangle-header{
-        width: 560.84px;
-        height: 165.09px;
-        margin-left: 14.97px
+        @include dimensions(560.84px, 165.09px);
+        @include margins(17px, 0px, 14.97px, 0px);
     }
 
     .title{
-        font-size: 26px;
-        margin-left: 18.53px;
-        margin-top: 6.4px;
+        @include margins(6.4px, 0px, 18.53px, 0px);
     }
 
     .text{
-        width: 553.28px;
-        height: 327.6px;
-        margin-left: 20.53px;
+        @include dimensions(553.28px, 327.6px);
+        @include margins(5.4px, 12.69px, 20.53px, 0px);
     }
 }
 
@@ -128,36 +102,24 @@
 @media screen and (max-width: 320px) {
 
     .home-section{
-        width: 320px;
-        height: 752px;
+        @include dimensions(320px, 752px);
     }
 
-    .path-aside, .li-aside, .ul-aside{
-        visibility: hidden;
-        width: 0px !important;
-        height: 0px !important;
-        margin: 0px;
-        padding: 0px;
-        border: 0px
+    .path-aside,.li-aside, .ul-aside{
+        @include invisible(hidden, 0px !important);
     }
     
     .rectangle-header{
-        width: 290px;
-        height: 86px;
-        margin-top: 0px;
-        margin-left: 15px;
+        @include dimensions(290px, 86px);
+        @include margins(0px, 0px, 15px, 0px);
     }
 
     .title{
-        margin-left: 14.72px;
-        margin-top: 14.49px;
-        margin-bottom: 0px;
+        @include margins(14.49px, 0px, 14.72px, 0px);
     }
 
     .text{
-        width: 289.28px;
-        height: 610.25px;
-        margin-block: 0px;
-        margin-left: 15.72px;
+        @include dimensions(289.28px, 610.25px);
+        @include margins(0px, 0px, 15.72px, 0px);
     }
 }

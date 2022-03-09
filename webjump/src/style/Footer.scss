@@ -2,33 +2,27 @@
 
 
 .footer{
-    width: 1240px;
-    height: 176px;
-    margin-left: 101px;
+    @include dimensions(1240px, 176px);
+    @include margins(0px, 22px, 101px, 0px);
     background-color: $webfatorial-bars;
-    margin-bottom: 22px
 }
 
 @media screen and (max-width: 1024px) {
     .footer{
-        width: 984px;
-        height: 176px;
-        margin-left: 20px
+        @include dimensions(984px, 176px);
+        @include margins(0px, 22px, 20px, 0px);
     }
 }
 
 @media screen and (max-width: 768px) {
     .footer{
-        width: 729px;
-        height: 180px
+        @include dimensions(729px, 180px);
     }
 }
 
 @media screen and (max-width: 320px) {
     .footer{
-        width: 290px;
-        margin-left: 15px;
-        margin-top: 0px;
-        margin-bottom: 19px
+        @include dimensions(290px, 176px);
+        @include margins(0px, 19px, 15px, 0px);
     }
 }

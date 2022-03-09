@@ -7,19 +7,19 @@
 
 @media screen and (max-width: 1024px){
     .products{
-        width: 752px
+        @include dimensions(752px, auto);
     }
 }
 
 @media screen and (max-width: 768px){
     .products{
-        width: 500px
+        @include dimensions(500px, auto);
     }
 }
 
 @media screen and (max-width: 320px){
     .products{
-        width: 292px;
-        margin-top: 50px
+        @include dimensions(292px, auto);
+        @include margins(50px, 0px, 0px, 0px);
     }
 }

@@ -1,14 +1,14 @@
 @import '../../sass/abstract/variables';
 
 .header-top{
-    height: 31px;
+    @include dimensions(auto, 31px);
     background-color: $webfatorial-black3;
     display: flex
 }
 
 .header-top-text{
-    height: 31px;
-    margin-left: 1114px;
+    @include dimensions(auto, 31px);
+    @include margins(0px, 0px, 1114px, 0px);
     display: flex;
     align-items: center;
 
@@ -24,39 +24,34 @@
 }
 
 .header-bot{
-    height: 114px;
     display: flex;
+    @include dimensions(auto, 114px);
 
     .logo{
         align-self: center;
-        margin-left: 101px;
+        @include margins(0px, 0px, 101px, 0px);
         
         .interrogation1, .interrogation2{
-            width: 0px;
-            height: 0px;
+            @include invisible (hidden, 0px);
             align-self: center;
-            visibility: hidden
         }
     }
 
     .search{
-        width: 414px;
-        height: 42px;
+        @include dimensions(414px, 42px);
+        @include margins(31px, 0px, 529.53px, 0px);
         padding: 0px;
         border: 1px solid $webfatorial-gray3;
-        margin-left: 529.53px;
-        margin-top: 31px
     }
 
     .button-search{
-        width: 110px;
-        height: 44px;
+        @include dimensions(110px, 44px);
+        @include margins(31px, 0px, 0px, 0px);
         background-color: $webfatorial-bars;
-        font-size: 16px;
         color: $webfatorial-background;
-        border-style: none;
-        margin-top: 31px;
         font-weight: map-get($webfont-weight, "extra-bold");
+        font-size: 16px;
+        border-style: none;
         cursor: pointer;
         
         &:hover{
@@ -67,24 +62,18 @@
 
 @media screen and (max-width: 1024px) {
     .header-top-text{
-        margin-left: 777px
+        @include margins(0px, 0px, 777px, 0px);
     }
 
     .header-bot{
-        width: 100%;
-        height: 114px;
+        @include dimensions(1024px, 114px);
 
         .logo{
-            margin-left: 19px
+            @include margins(0px, 0px, 19px, 0px);
         }
 
         .search{
-            margin-left: 274.53px;
-            margin-top: 31px
-        }
-    
-        .button-search{
-            margin-top: 31px
+            @include margins(31px, 0px, 274.53px, 0px);
         }
     }
 }
@@ -92,54 +81,45 @@
 
 @media screen and (max-width: 768px) {
     .header-top-text{
-        margin-left: 521px
+        @include margins(0px, 0px, 521px, 0px);
     }
 
     .header-bot{
-        width: 768px;
-        height: 114px;
+        @include dimensions(768px, 114px);
 
         .logo{
-            margin-left: 20px
+            @include margins(0px, 0px, 20px, 0px);
         }
     
         .search{
-            margin-left: 16.53px;
-            margin-top: 31px
-        }
-    
-        .button-search{
-            margin-top: 31px
+            @include margins(31px, 0px, 16.53px, 0px);
         }
     }
 }
 
 @media screen and (max-width: 320px) {
     .header-top{
-        height: 30px;
+        @include dimensions(auto, 30px);
 
         .header-top-text{
-            margin-left: 47px
+            @include margins(0px, 0px, 47px, 0px);
         }
     }
 
     .header-bot{
-        width: 320px;
-        height: 114px;
+        @include dimensions(320px, 114px);
         padding: 0;
 
         .logo{
-            margin-left: 16.58px;
-            width: 320px;
-            margin-left: 0px;
+            @include dimensions(320px, auto);
+            @include margins(0px, 0px, 0px, 0px);
             justify-content: space-between;
             display: flex;
 
             .interrogation1, .interrogation2{
                 visibility: visible;
-                width: 29px;
-                height: 27px;
-                margin-inline: 20px;
+                @include dimensions(29px, 27px);
+                @include margins(0px, 0px, 20px, 20px);
             }
         
             .interrogation2{
@@ -148,21 +128,11 @@
         }
     
         .search{
-            visibility: hidden;
-            width: 0px;
-            height: 0px;
-            margin: 0px;
-            padding: 0px;
-            border: 0px
+            @include invisible(hidden, 0px)
         }
     
         .button-search{
-            visibility: hidden;
-            width: 0px;
-            height: 0px;
-            margin: 0px;
-            padding: 0px;
-            border: 0px
+            @include invisible(hidden, 0px)
         }
     }
 }

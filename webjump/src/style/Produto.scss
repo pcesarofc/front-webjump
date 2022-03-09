@@ -1,19 +1,16 @@
 @import '../../sass/abstract/variables';
 
 .product{
-    width: 212px;
-    height: 365px;
-    margin-right: 35.72px;
-    margin-bottom: 20px;
+    @include dimensions(212px, 365px);
+    @include margins(0px, 20px, 0px, 35.72px);
     display: flex;
     flex-direction: column;
     align-items: center
 }
 
 .photo{
-    width: 212px;
-    height: 233px;
-    margin-bottom: 8.49px;
+    @include dimensions(212px, 233px);
+    @include margins(0px, 8.49px, 0px, 0px);
     border: 1px solid $webfatorial-gray1;
     background-color: $webfatorial-background;
     display: flex;
@@ -22,16 +19,14 @@
 }
 
 .image-product{
-    width: 196.27px;
-    height: 215.71px;
+    @include dimensions(196.27px, 215.71px);
     align-self: center;
     object-fit: scale-down
 }
 
 .description-product{
-    height: 22px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    @include dimensions(auto, 22px);
+    @include margins(0px, 0px, 0px, 0px);
     font-size: 16px;
     font-weight: map-get($webfont-weight, "regular");
     text-align: center;
@@ -39,25 +34,23 @@
 }
 
 .prices{
-    margin-top: 24px;
-    margin-bottom: 9.51px;
+    @include margins(24px, 9.51px, 0px, 0px);
     display: flex;
     align-items: center;
     justify-content: center;
 
     .special-price{
-        height: 20px;
-        margin: 0px;
-        margin-right: 9px;
+        @include dimensions(auto, 20px);
+        @include margins(0px, 0px, 0px, 9px);
+        color: $webfatorial-gray4;
         font-size: 15px;
         text-align: center;
         text-decoration: line-through;
-        color: $webfatorial-gray4
     }
     
     .item-price{
-        height: 28px;
-        margin: 0px;
+        @include dimensions(auto, 28px);
+        @include margins(0px, 0px, 0px, 0px);
         font-size: 21px;
         font-weight: map-get($webfont-weight, "extra-bold");
         text-align: center;
@@ -66,8 +59,7 @@
 }
 
 .button-buy{
-    width: 210px;
-    height: 40px;
+    @include dimensions(210px, 40px);
     font-weight: map-get($webfont-weight, "extra-bold");
     font-size: 18px;
     border-radius: 5px;
@@ -83,61 +75,49 @@
 
 @media screen and (max-width: 1024px){
     .product{
-        width: 162.97px;
-        height: 314px;
-        margin-right: 24px
+        @include dimensions(162.97px, 314px);
+        @include margins(0px, 20px, 0px, 24px);
     }
 
     .photo{
-        width: 162.97px;
-        height: 179.19px;
-        margin-bottom: 11.3px
+        @include dimensions(162.97px, 179.19px);
+        @include margins(0px, 11.3px, 0px, 0px);
     }
     
     .image-product{
-        width: 162.97px;
-        height: 179.19px
+        @include dimensions(162.97px, 179.19px);
     }
     
     .button-buy{
-        width: 164px;
-        height: 40px
+        @include dimensions(164px, 40px);
     }
 }
 
 @media screen and (max-width: 768px){
     .product{
-        width: 149.66px;
-        height: 333px;
-        margin-right: 17px
+        @include dimensions(149.66px, 333px);
+        @include margins(0px, 20px, 0px, 17px);
     }
     
     .photo{
-        width: 149.66px;
-        height: 165px
+        @include dimensions(149.66px, 165px);
     }
     
     .image-product{
-        width: 149.66px;
-        height: 165px
-    }
-    
-    .description-products{
-        margin-top: 0px;
-        margin-bottom: 0px
+        @include dimensions(149.66px, 165px);
     }
     
     .prices{
-        margin-top: 20px;
+        @include margins(20px, 9.51px, 0px, 0px);
         display: block
     }
     
     .button-buy{
-        width: 149.5px
+        @include dimensions(149.5px, 40px);
     }
 
     .special-price{
-        margin-right: 0px !important
+        @include margins(0px, 0px, 0px, 0px !important);
     }
 
 }
@@ -145,36 +125,23 @@
 @media screen and (max-width: 320px){
     
     .product{
-        width: 132.78px;
-        height: 254.49px;
-        margin-right: 10px
+        @include dimensions(132.78px, 254.49px);
+        @include margins(0px, 20px, 0px, 10px);
     }
     
     .photo{
-        width: 132.78px;
-        height: 146px
+        @include dimensions(132.78px, 146px);
     }
     
     .image-product{
-        width: 132.78px;
-        height: 146px
-    }
-    
-    .description-products{
-        margin-top: 0px;
-        margin-bottom: 0px
+        @include dimensions(132.78px, 146px);
     }
 
     .prices{
-        margin-top: 40px
+        @include margins(40px, 9.51px, 0px, 0px);
     }
     
     .button-buy{
-        width: 0px;
-        height: 0px;
-        margin: 0px;
-        padding: 0px;
-        border: 0px;
-        visibility: hidden
+        @include invisible(hidden, 0px)
     }
 }

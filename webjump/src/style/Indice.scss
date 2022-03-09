@@ -1,16 +1,13 @@
 @import '../../sass/abstract/variables';
 
 .index-indicator{
-    width: 200px;
-    height: 19px;
-    margin-left: 99.36px;
-    margin-top: 27.49px;
+    @include dimensions(200px, 19px);
+    @include margins(27.49px, 0px, 99.36px, 0px);
 
     .index-home{
-        width: 152px;
-        height: 19px;
-        font-size: 14px;
+        @include dimensions(152px, 19px);
         color: $webfatorial-buttons;
+        font-size: 14px;
         text-decoration: none;
 
         &:hover{
@@ -37,12 +34,12 @@
 
 @media screen and (max-width: 1024px){
     .index-indicator{
-        margin-left: 18.72px
+        @include margins(27.49px, 0px, 18.72px, 0px);
     }
 }
 
 @media screen and (max-width: 320px){
     .index-indicator{
-        margin-left: 13.72px
+        @include margins(27.49px, 0px, 13.72px, 0px);
     }    
 }

@@ -5,82 +5,77 @@
     height: 54px;
 
     .nav-container{
-        height: 100%;
+        @include dimensions(auto, 100%);
+        @include margins (0px, 0px, 0px, 0px);
         padding: 0%;
-        margin: 0px;
         list-style: none;
         display: flex;
         align-items: center
     }
 
     .product-nav{
-        font-size: 16px;
-        font-weight: map-get($webfont-weight, "extra-bold");
-        height: 22px;
+        @include dimensions(auto, 22px);
         color: $webfatorial-background;
+        font-weight: map-get($webfont-weight, "extra-bold");
+        font-size: 16px;
     
         .redirect{
+            color: $webfatorial-background;
             text-decoration: none;
-            color: $webfatorial-background
         }
     }
 }
 
 #home-nav{
-    margin-left: 103px
+    @include margins (0px, 0px, 103px, 0px);
 }
 
 #shirts-nav{
-    margin-left: 75px
+    @include margins (0px, 0px, 75px, 0px);
 }
 
 #pants-nav{
-    margin-left: 107px
+    @include margins (0px, 0px, 107px, 0px);
 }
 
 #shoes-nav{
-    margin-left: 116px
+    @include margins (0px, 0px, 116px, 0px);
 }
 
 #contact-nav{
-    margin-left: 110px
+    @include margins (0px, 0px, 110px, 0px);
 }
 
 @media screen and (max-width: 1024px) {
     #home-nav{
-        margin-left: 20.53px
+        @include margins (0px, 0px, 20.53px, 0px);
     }
 }
 
 @media screen and (max-width: 768px) {
     #home-nav{
-        margin-left: 20.53px
+        @include margins (0px, 0px, 20.53px, 0px);
     }
 
     #shirts-nav{
-        margin-left: 46px
+        @include margins (0px, 0px, 46px, 0px);
     }
 
     #pants-nav{
-        margin-left: 78px
+        @include margins (0px, 0px, 78px, 0px);
     }
 
     #shoes-nav{
-        margin-left: 88px
+        @include margins (0px, 0px, 88px, 0px);
     }
 
     #contact-nav{
-        margin-left: 80px
+        @include margins (0px, 0px, 80px, 0px);
     }
 }
 
 @media screen and (max-width: 320px) {
-    .navigator,.nav-container, .product-nav, .redirect{
-            visibility: hidden;
-            width: 0px !important;
-            height: 0px !important;
-            margin: 0px !important;
-            padding: 0px;
-            border: 0px
-        }
+    .navigator, .nav-container, .product-nav, .redirect{
+            @include invisible(hidden, 0px !important)
+    }
 }

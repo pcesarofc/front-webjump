@@ -1,14 +1,12 @@
 @import '../../sass/abstract/variables';
 
 .numbers-page{
-    width: 193.11px;
-    margin-left: 767.1px;
-    margin-bottom: 27px;
+    @include dimensions(193.11px, auto);
+    @include margins(0px, 27px, 767.1px, 0px);
     display: flex;
 
     .number{
-        height: 22px;
-        width: 124px;
+        @include dimensions(124px, 22px);
         display: flex;
         justify-content: space-between;
         cursor: pointer;
@@ -21,36 +19,34 @@
 }
 
 .back-button, .forward-button{
-    width: 11.11px;
-    height: 18px;
+    @include dimensions(11.11px, 18px);
     color: $webfatorial-buttons;
     font-weight: map-get($webfont-weight, "extra-bold");
     cursor: pointer
 }
 
 .back-button{
-    margin-right: 23.44px
+    @include margins(0px, 0px, 0px, 23.44px);
 }
 
 .forward-button{
-    margin-left: 23.44px
+    @include margins(0px, 0px, 23.44px, 0px);
 }
 
 @media screen and (max-width: 1024px){
     .numbers-page{
-        margin-left: 545.72px
+        @include margins(0px, 27px, 545.72px, 0px);
     }
 }
 
 @media screen and (max-width: 768px){
     .numbers-page{
-        margin-left: 384px
+        @include margins(0px, 27px, 384px, 0px);
     }
 }
 
 @media screen and (max-width: 320px){
     .numbers-page{
-        margin-left: 64.1px;
-        margin-bottom: 25px
+        @include margins(0px, 25px, 64.1px, 0px);
     }
 }

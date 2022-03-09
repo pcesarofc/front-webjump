@@ -1,30 +1,28 @@
 @import '../../sass/abstract/variables';
 
 .body-products{
-    width: 1440px;
-    height: auto;
-
-    
+    @include dimensions(1440px, auto);
 }
+
 .container-products{
     display: flex
 }
+
 @media screen and (max-width: 1024px){
     .body-products{
-        width: 1024px
+        @include dimensions(1024px, auto);
     }
-    
 }
 
 @media screen and (max-width: 768px){
     .body-products{
-        width: 768px
+        @include dimensions(768px, auto);
     }
 }
 
 @media screen and (max-width: 320px){
     .body-products{
-        width: 320px
+        @include dimensions(320px, auto);
     }
     
     .container-products{
