@@ -1,7 +1,6 @@
 import React from "react";
 import Produto from "./Produto";
-import '../style/Produtos.css'
-
+import '../style/Produtos.scss'
 
 export default ({produtos}) => (
     <div className="products">

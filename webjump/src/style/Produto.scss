@@ -1,3 +1,5 @@
+@import '../../sass/abstract/variables';
+
 .product{
     width: 212px;
     height: 365px;
@@ -136,7 +138,7 @@
     
     .prices{
         display: block;
-        margin-top: 10px;
+        margin-top: 20px;
     }
     
     .button-buy{
@@ -169,9 +171,13 @@
         margin-top: 0px;
         margin-bottom: 0px
     }
-    
+
     .products{
         margin-top: 50px;
+    }
+
+    .prices{
+        margin-top:40px
     }
     
     .button-buy{

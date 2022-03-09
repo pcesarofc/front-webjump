@@ -1,5 +1,7 @@
+@import '../../sass/abstract/variables';
+
 .index-indicator{
-    width: 170px;
+    width: 200px;
     height: 19px;
     margin-left: 99.36px;
     margin-top: 27.49px;
@@ -24,6 +26,10 @@
     font-size: 14px;
     text-decoration: none;
     color: #CB0D1F;
+}
+
+.index-home:hover, .index-second:hover{
+    font-weight: 700;
 }
 
 @media screen and (max-width: 1024px){

@@ -1,0 +1,160 @@
+@import '../../sass/abstract/variables';
+
+.header-top{
+    height: 31px;
+    background-color: $webfatorial-black3;
+    display: flex
+}
+
+.header-top-text{
+    height: 31px;
+    margin-left: 1114px;
+    display: flex;
+    align-items: center;
+
+    .or, .acess, .register{
+        color: $webfatorial-background;
+        font-size: 14px;
+        margin-inline: 2.48px
+    }
+    
+    .acess, .register{
+        font-weight: map-get($webfont-weight, "bold")
+    }
+}
+
+.header-bot{
+    height: 114px;
+    display: flex;
+
+    .logo{
+        align-self: center;
+        margin-left: 101px;
+        
+        .interrogation1, .interrogation2{
+            width: 0px;
+            height: 0px;
+            align-self: center;
+            visibility: hidden
+        }
+    }
+
+    .search{
+        width: 414px;
+        height: 42px;
+        padding: 0px;
+        border: 1px solid $webfatorial-gray3;
+        margin-left: 529.53px;
+        margin-top: 31px
+    }
+
+    .button-search{
+        width: 110px;
+        height: 44px;
+        background-color: $webfatorial-bars;
+        font-size: 16px;
+        color: $webfatorial-background;
+        border-style: none;
+        margin-top: 31px;
+        font-weight: map-get($webfont-weight, "extra-bold");
+        cursor: pointer;
+        
+        &:hover{
+            background-color: $webfatorial-buttons
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header-top-text{
+        margin-left: 777px
+    }
+
+    .header-bot{
+        width: 100%;
+        height: 114px;
+
+        .logo{
+            margin-left: 19px
+        }
+
+        .search{
+            margin-left: 274.53px;
+            margin-top: 31px
+        }
+    
+        .button-search{
+            margin-top: 31px
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .header-top-text{
+        margin-left: 521px
+    }
+
+    .header-bot{
+        width: 768px;
+        height: 114px;
+
+        .logo{
+            margin-left: 20px
+        }
+    
+        .search{
+            margin-left: 16.53px;
+            margin-top: 31px
+        }
+    
+        .button-search{
+            margin-top: 31px
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header-top{
+        height: 30px;
+
+        .header-top-text{
+            margin-left: 47px
+        }
+    }
+
+    .header-bot{
+        width: 320px;
+        height: 114px;
+        padding: 0;
+
+        .logo{
+            margin-left: 16.58px;
+            width: 320px;
+            justify-content: space-between;
+            display: flex;
+
+            .interrogation1, .interrogation2{
+                visibility: visible;
+                width: 29px;
+                height: 27px
+            }
+        
+            .interrogation2{
+                color: $webfatorial-bars
+            }
+        }
+    
+        .search{
+            visibility: hidden;
+            width: 0px;
+            height: 0px
+        }
+    
+        .button-search{
+            visibility: hidden;
+            width: 0px;
+            height: 0px
+        }
+    }
+}

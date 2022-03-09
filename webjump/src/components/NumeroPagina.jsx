@@ -1,5 +1,5 @@
 import React from "react"
-import '../style/NumeroPagina.css'
+import '../style/NumeroPagina.scss'
 
 export default () => (
     <div className="numbers-page">

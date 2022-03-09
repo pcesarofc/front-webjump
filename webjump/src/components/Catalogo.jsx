@@ -6,7 +6,9 @@ import { useLocation } from "react-router-dom"
 import { FaList } from "react-icons/fa"
 import { BsFillGrid3X3GapFill } from 'react-icons/bs'
 import axios from 'axios'
-import '../style/Catalogo.css'
+import $ from 'jquery'
+import '../style/Catalogo.scss'
+import '../style/Produtos.scss'
 
 
 export default function () {
@@ -57,13 +59,27 @@ export default function () {
             setprodutos(novosProdutos)
         })
     }, [])
+    
+    function viewGrid(){
+        $(".products").css("display", "flex")
+        $(".product").css("flex-direction", "column")
+        $(".grid").css("color", "#ED1A39")
+        $(".list").css("color", "#00A8A9")
+    }
+
+    function viewList(){
+        $(".products").css("display", "block")
+        $(".list").css("color", "#ED1A39")
+        $(".grid").css("color", "#00A8A9")
+
+    }
 
     return <section  className="products-catalog">
         <h1 className="title-product" >{descricao}</h1>
         <div className="border"/>
         <div className="filters">
-            <BsFillGrid3X3GapFill className="grid"/>
-            <FaList className="list"/>
+            <BsFillGrid3X3GapFill className="grid" onClick={viewGrid}/>
+            <FaList className="list" onClick={viewList}/>
             <FiltroPreco/>
         </div>
         <div className="container-catalog">

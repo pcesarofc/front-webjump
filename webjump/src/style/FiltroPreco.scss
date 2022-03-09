@@ -1,0 +1,49 @@
+@import '../../sass/abstract/variables';
+
+
+.price-filter{
+    margin-left: 587.5px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+    .order{
+        width: 80px;
+        height: 15px;
+        margin-right: 13.28px;
+        font-weight: map-get($webfont-weight, "bold" );
+        font-size: 11px;
+        color: $webfatorial-gray4
+    }
+
+    .dropbox{
+        width: 216px;
+        height: 27px;
+        font-size: 14px;
+        border-color: $webfatorial-gray1;
+        border-radius: 5px;
+        cursor: pointer
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .price-filter{
+        margin-left: 365.97px
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .price-filter{
+        margin-left: 132.51px
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .price-filter{
+        margin-left: 0px
+    }
+    
+    .dropbox{
+        width: 198.63px
+    }
+}

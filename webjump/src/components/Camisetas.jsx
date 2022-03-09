@@ -4,7 +4,7 @@ import Filtro from "./Filtro"
 import Catalogo from "./Catalogo"
 import NumeroPagina from "./NumeroPagina"
 import Footer from './Footer'
-import '../style/Sapatos.css'
+import '../style/Sapatos.scss'
 
 export default () => (
     <div className="body-products">
