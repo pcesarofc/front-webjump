@@ -131,6 +131,7 @@
         .logo{
             margin-left: 16.58px;
             width: 320px;
+            margin-left: 0px;
             justify-content: space-between;
             display: flex;
 
@@ -148,13 +149,19 @@
         .search{
             visibility: hidden;
             width: 0px;
-            height: 0px
+            height: 0px;
+            margin: 0px;
+            padding: 0px;
+            border: 0px
         }
     
         .button-search{
             visibility: hidden;
             width: 0px;
-            height: 0px
+            height: 0px;
+            margin: 0px;
+            padding: 0px;
+            border: 0px
         }
     }
 }

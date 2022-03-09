@@ -3,132 +3,123 @@
 .product{
     width: 212px;
     height: 365px;
+    margin-right: 35.72px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    margin-right: 35.72px;
+    align-items: center
 }
 
 .photo{
     width: 212px;
     height: 233px;
-    background-color: white;
-    border: 1px solid #E2DEDC;
+    margin-bottom: 8.49px;
+    border: 1px solid $webfatorial-gray1;
+    background-color: $webfatorial-background;
     display: flex;
     justify-content: center;
-    margin-bottom: 8.49px;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .image-product{
     width: 196.27px;
     height: 215.71px;
-    object-fit: scale-down;
     align-self: center;
+    object-fit: scale-down
 }
 
 .description-product{
     height: 22px;
-    font-weight: 300;
-    color: #626262;
-    font-size: 16px;
-    text-align: center;
     margin-top: 0px;
-    margin-bottom: 0px
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: map-get($webfont-weight, "regular");
+    text-align: center;
+    color: $webfatorial-gray5
 }
 
 .prices{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 24px;
-    margin-bottom: 9.51px
-}
+    margin-bottom: 9.51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.special-price{
-    height: 20px;
-    text-align: center;
-    text-decoration: line-through;
-    letter-spacing: 0px;
-    color: #808185;
-    font-size: 15px;
-    margin: 0px;
-    margin-right: 9px;
-}
-
-.item-price{
-    height: 28px;
-    font-weight: 800;
-    color: #1E2B50;
-    font-size: 21px;
-    text-align: center;
-    margin: 0px
+    .special-price{
+        height: 20px;
+        margin: 0px;
+        margin-right: 9px;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: line-through;
+        color: $webfatorial-gray4
+    }
+    
+    .item-price{
+        height: 28px;
+        margin: 0px;
+        font-size: 21px;
+        font-weight: map-get($webfont-weight, "extra-bold");
+        text-align: center;
+        color: $webfatorial-prices
+    }
 }
 
 .button-buy{
     width: 210px;
     height: 40px;
-    background-color: #00A8A9;
-    color: white;
-    font-weight: 800;
+    font-weight: map-get($webfont-weight, "extra-bold");
     font-size: 18px;
     border-radius: 5px;
     border-style: none;
+    color: $webfatorial-background;
+    background-color: $webfatorial-buttons;
     cursor: pointer;
-}
 
-.button-buy:hover{
-    background-color: #CB0D1F;
+    &:hover{
+        background-color: $webfatorial-bars
+    }
 }
 
 @media screen and (max-width: 1024px){
-    .products{
-        width: 752px;
-    }
-    
     .product{
         width: 162.97px;
         height: 314px;
-        margin-right: 24px;
+        margin-right: 24px
     }
 
     .photo{
         width: 162.97px;
         height: 179.19px;
-        margin-bottom: 11.3px;
+        margin-bottom: 11.3px
     }
     
     .image-product{
         width: 162.97px;
-        height: 179.19px;
+        height: 179.19px
     }
     
     .button-buy{
         width: 164px;
-        height: 40px;
+        height: 40px
     }
 }
 
 @media screen and (max-width: 768px){
-    
-    .products{
-        width: 500px;
-    }
     .product{
         width: 149.66px;
         height: 333px;
-        margin-right: 17px;
+        margin-right: 17px
     }
     
     .photo{
         width: 149.66px;
-        height: 165px;
+        height: 165px
     }
     
     .image-product{
         width: 149.66px;
-        height: 165px;
+        height: 165px
     }
     
     .description-products{
@@ -137,34 +128,36 @@
     }
     
     .prices{
-        display: block;
         margin-top: 20px;
+        display: block
     }
     
     .button-buy{
-        width: 149.5px;
+        width: 149.5px
+    }
+
+    .special-price{
+        margin-right: 0px !important
     }
 
 }
 
 @media screen and (max-width: 320px){
-    .products{
-        width: 292px;
-    }
+    
     .product{
         width: 132.78px;
         height: 254.49px;
-        margin-right: 10px;
+        margin-right: 10px
     }
     
     .photo{
         width: 132.78px;
-        height: 146px;
+        height: 146px
     }
     
     .image-product{
         width: 132.78px;
-        height: 146px;
+        height: 146px
     }
     
     .description-products{
@@ -172,18 +165,16 @@
         margin-bottom: 0px
     }
 
-    .products{
-        margin-top: 50px;
-    }
-
     .prices{
-        margin-top:40px
+        margin-top: 40px
     }
     
     .button-buy{
-        visibility: hidden;
         width: 0px;
         height: 0px;
+        margin: 0px;
         padding: 0px;
+        border: 0px;
+        visibility: hidden
     }
 }

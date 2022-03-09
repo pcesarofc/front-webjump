@@ -6,7 +6,8 @@ export default function ({produtos}) {
     const uri = 'http://localhost:8888/' + produtos.image
     return <div className="product">
         <div className="photo">
-            <img className='image-product' src={uri} /></div>
+            <img className='image-product' src={uri} />
+        </div>
         <h2 className="description-product">{produtos.name}</h2>
         <div className="prices">
             <h3 className="special-price">{produtos.specialPrice}</h3>

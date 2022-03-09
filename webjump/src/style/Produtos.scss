@@ -4,3 +4,22 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+@media screen and (max-width: 1024px){
+    .products{
+        width: 752px
+    }
+}
+
+@media screen and (max-width: 768px){
+    .products{
+        width: 500px
+    }
+}
+
+@media screen and (max-width: 320px){
+    .products{
+        width: 292px;
+        margin-top: 50px
+    }
+}

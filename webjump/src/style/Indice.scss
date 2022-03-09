@@ -5,41 +5,44 @@
     height: 19px;
     margin-left: 99.36px;
     margin-top: 27.49px;
-}
 
-.index-home{
-    width: 152px;
-    height: 19px;
-    font-size: 14px;
-    text-align: left;
-    color: #00A8A9;
-    text-decoration: none;
-}
+    .index-home{
+        width: 152px;
+        height: 19px;
+        font-size: 14px;
+        color: $webfatorial-buttons;
+        text-decoration: none;
 
-.bigger{
-    font-size: 14px;
-    color: #ACACAC;
-    text-decoration: none;
-}
+        &:hover{
+            font-weight: map-get($webfont-weight, "bold")
+        }
+    }
 
-.index-second{
-    font-size: 14px;
-    text-decoration: none;
-    color: #CB0D1F;
-}
+    .bigger{
+        font-size: 14px;
+        color: $webfatorial-gray2;
+        text-decoration: none
+    }
+    
+    .index-second{
+        font-size: 14px;
+        text-decoration: none;
+        color: $webfatorial-bars;
 
-.index-home:hover, .index-second:hover{
-    font-weight: 700;
+        &:hover{
+            font-weight: map-get($webfont-weight, "bold")
+        }
+    }
 }
 
 @media screen and (max-width: 1024px){
     .index-indicator{
-        margin-left: 18.72px;
+        margin-left: 18.72px
     }
 }
 
 @media screen and (max-width: 320px){
     .index-indicator{
-        margin-left: 13.72px;
+        margin-left: 13.72px
     }    
 }

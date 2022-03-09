@@ -7,27 +7,27 @@ export default () => (
     <>
         <nav className="navigator">
             <ul className="nav-container">
-                <li className="home-nav">
+                <li className="product-nav" id="home-nav">
                     <Link className="redirect" to="/" >
                         PÁGINA INICIAL
                     </Link>
                 </li>
-                <li className="shirts-nav">
+                <li className="product-nav" id="shirts-nav">
                     <Link className="redirect" to="/camisetas">
                         CAMISETAS
                     </Link>
                 </li>
-                <li className="pants-nav">
+                <li className="product-nav" id="pants-nav">
                     <Link className="redirect" to="/calcas">
                         CALÇAS
                     </Link>
                 </li>
-                <li className="shoes-nav">
+                <li className="product-nav" id="shoes-nav">
                     <Link className="redirect" to="/sapatos">
                         SAPATOS
                     </Link>
                 </li>
-                <li className="contact-nav">CONTATO</li>
+                <li className="product-nav" id="contact-nav">CONTATO</li>
             </ul>
         </nav>
     </>

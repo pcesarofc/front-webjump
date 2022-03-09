@@ -3,32 +3,32 @@
 .body-products{
     width: 1440px;
     height: auto;
+
+    
 }
 .container-products{
-    display: flex;
+    display: flex
 }
-
-
 @media screen and (max-width: 1024px){
     .body-products{
-        width: 1024px;
+        width: 1024px
     }
     
 }
 
 @media screen and (max-width: 768px){
     .body-products{
-        width: 768px;
+        width: 768px
     }
 }
 
 @media screen and (max-width: 320px){
     .body-products{
-        width: 320px;
+        width: 320px
     }
     
     .container-products{
-        display: block;
+        display: block
     }    
 }
 

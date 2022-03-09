@@ -10,6 +10,19 @@
     background-color: #E2DEDC;
     margin-top: 24px;
     margin-left: 101px;
+
+    .ul-aside{
+        font-size: 18px;
+    
+        .li-aside{
+            text-decoration: none;
+            color: #000000;
+        
+            &:hover{
+                font-weight: 700;
+            }
+        }
+    }
 }
 
 .rectangle-header{
@@ -42,18 +55,6 @@
     line-height: 19.2px;
 }
 
-.ul-aside{
-    font-size: 18px;
-}
-
-.li-aside{
-    text-decoration: none;
-    color: #000000;
-}
-
-.li-aside:hover{
-    font-weight: 700;
-}
 
 
 @media screen and (max-width: 1024px) {
@@ -96,12 +97,12 @@
     .path-aside{
         width: 153.19px;
         height: 357px;
-    }
 
-    .ul-aside{
-        width: 107px;
-        height: 99px;
-        font-size: 16px;
+        .ul-aside{
+            width: 107px;
+            height: 99px;
+            font-size: 16px;
+        }
     }
 
     .rectangle-header{
@@ -131,11 +132,13 @@
         height: 752px;
     }
 
-    .path-aside{
+    .path-aside, .li-aside, .ul-aside{
         visibility: hidden;
-        width: 0px;
-        height: 0px;
+        width: 0px !important;
+        height: 0px !important;
         margin: 0px;
+        padding: 0px;
+        border: 0px
     }
     
     .rectangle-header{
