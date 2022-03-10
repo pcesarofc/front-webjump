@@ -5,17 +5,17 @@
 .path-aside{
     @include dimensions(251.22px, 507px);
     @include margins(24px, 0px, 101px, 0px);
-    background-color: #E2DEDC;
+    background-color: $webfatorial-gray1;
 
     .ul-aside{
         font-size: 18px;
     
         .li-aside{
             text-decoration: none;
-            color: #000000;
+            color: $webfatorial-black1;
         
             &:hover{
-                font-weight: 700;
+                font-weight: map-get($webfont-weight, "bold");
             }
         }
     }
@@ -24,7 +24,7 @@
 .rectangle-header{
     @include dimensions(954px, 281px);
     @include margins(24px, 0px, 24.78px, 0px);
-    background-color: #ACACAC;
+    background-color: $webfatorial-gray2;
 }
 
 .title{
@@ -37,7 +37,7 @@
     @include dimensions(951.65px, 181.42px);
     @include margins(5.4px, 12.69px, 24.5px, 0px);
     font-size: 16px;
-    color: #000000;
+    color: $webfatorial-black1;
     line-height: 19.2px;
 }
 
