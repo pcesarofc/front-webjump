@@ -58,6 +58,35 @@ export default function () {
             setprodutos(novosProdutos)
         })
     }, [])
+
+    function orderProducts(){
+        
+        let newProducts = produtos
+        let i
+        let newprice
+        let newprice2
+
+        for (i in newProducts){
+            newprice = newProducts[i].price.replace(",", ".").replace("R$", "")
+            newprice = parseFloat(newprice)
+            newProducts[i].price = newprice
+        }
+
+        newProducts.sort(function(a, b) {
+            if(a.price < b.price) {
+              return -1;
+            } else {
+              return true;
+            }
+          });
+
+        for (i in newProducts){
+            newprice2 = "R$" + newProducts[i].price.toFixed(2).replace(".", ",")
+            newProducts[i].price = newprice2
+        }
+
+        setprodutos(newProducts)
+    }
     
     function viewGrid(){
         $(".products").css("display", "flex")
@@ -79,7 +108,7 @@ export default function () {
         <div className="filters">
             <BsFillGrid3X3GapFill className="grid" onClick={viewGrid}/>
             <FaList className="list" onClick={viewList}/>
-            <FiltroPreco/>
+            <FiltroPreco orderProducts={orderProducts}/>
         </div>
         <div className="container-catalog">
             <Produtos produtos={produtos}/>
