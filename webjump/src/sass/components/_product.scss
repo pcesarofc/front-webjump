@@ -1,5 +1,3 @@
-@import '../../sass/abstract/variables';
-
 .product{
     @include dimensions(212px, 365px);
     @include margins(0px, 20px, 0px, 35.72px);

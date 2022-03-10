@@ -1,14 +1,14 @@
-import React from "react"
-import Indice from "./Indice"
-import Filtro from "./Filtro"
-import Catalogo from "./Catalogo"
-import NumeroPagina from "./NumeroPagina"
+import React from 'react'
+import Indice from './Indice'
+import Filtro from './Filtro'
+import Catalogo from './Catalogo'
+import NumeroPagina from './NumeroPagina'
 import Footer from './Footer'
-import '../style/Sapatos.scss'
+import '../sass/app.scss'
 
 export default () => (
     <div className="body-products">
-        <Indice indice={'Sapatos'}/>
+        <Indice indice={"Sapatos"}/>
         <div className="container-products">
             <Filtro />
             <Catalogo/>

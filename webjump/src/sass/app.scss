@@ -1,0 +1,32 @@
+//abstract
+
+    @import "./abstract/mixins";
+    @import "./abstract/variables";
+
+
+//components
+
+    @import "./components/filterPrices";
+    @import "./components/filters";
+    @import "./components/indexes";
+    @import "./components/numberPage";
+    @import "./components/product";
+    @import "./components/products";
+
+
+//layout
+
+    @import "./layout/footer";
+    @import "./layout/header";
+    @import "./layout/navigator";
+
+
+//pages
+
+    @import "./pages/home";
+    @import "./pages/productPage";
+
+
+//sections
+
+    @import "./sections/catalog";

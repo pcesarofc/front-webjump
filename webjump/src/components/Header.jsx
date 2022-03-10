@@ -1,10 +1,10 @@
-import React from "react"
-import Logo from "./Logo"
-import { BsQuestionSquare } from "react-icons/bs"
-import { FiMenu } from "react-icons/fi"
-import { useLocation } from "react-router-dom"
-import { BiCart } from "react-icons/bi"
-import '../style/Header.scss'
+import React from 'react'
+import Logo from './Logo'
+import { BsQuestionSquare } from 'react-icons/bs'
+import { FiMenu } from 'react-icons/fi'
+import { useLocation } from 'react-router-dom'
+import { BiCart } from 'react-icons/bi'
+import '../sass/app.scss'
 
 
 export default function () {
@@ -14,9 +14,9 @@ export default function () {
     return (location.pathname == '/') ? <header className="header">
         <div className="header-top">
             <div className="header-top-text">
-                <a href="" className="acess">Acesse sua Conta</a>
+                <a className="acess">Acesse sua Conta</a>
                 <p className="or">ou</p>
-                <a href="" className="register">Cadastre-se</a>
+                <a className="register">Cadastre-se</a>
             </div>
         </div>
         <div className="header-bot">
@@ -34,9 +34,9 @@ export default function () {
     : <header className="header">
     <div className="header-top">
         <div className="header-top-text">
-            <a href="" className="acess">Acesse sua Conta</a>
+            <a className="acess">Acesse sua Conta</a>
             <p className="or">ou</p>
-            <a href="" className="register">Cadastre-se</a>
+            <a className="register">Cadastre-se</a>
         </div>
     </div>
     <div className="header-bot">

@@ -1,12 +1,12 @@
-import React from "react";
-import '../style/Produto.scss'
+import React from 'react'
+import '../sass/app.scss'
 
 export default function ({produtos}) {
 
-    const uri = 'http://localhost:8888/' + produtos.image
+    const uri = "http://localhost:8888/" + produtos.image
     return <div className="product">
         <div className="photo">
-            <img className='image-product' src={uri} />
+            <img className="image-product" src={uri} />
         </div>
         <h2 className="description-product">{produtos.name}</h2>
         <div className="prices">

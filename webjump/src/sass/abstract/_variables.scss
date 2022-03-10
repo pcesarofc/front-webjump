@@ -22,27 +22,4 @@ $webfont-weight: (
     "regular" : 300,
     "bold" : 700,
     "extra-bold" : 800
-);
-
-//Mixins
-
-@mixin invisible($display-hidden, $zero-px) {
-    visibility: $display-hidden;
-    width: $zero-px;
-    height: $zero-px;
-    margin: $zero-px;
-    padding: $zero-px;
-    border: $zero-px;
-};
-
-@mixin margins($top, $bottom, $left, $right){
-    margin-top: $top;
-    margin-bottom: $bottom;
-    margin-left: $left;
-    margin-right: $right;
-};
-
-@mixin dimensions($width, $height){
-    width: $width;
-    height: $height;
-}
+)

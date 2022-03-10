@@ -1,8 +1,7 @@
-import React from "react"
-import Footer from "./Footer"
-import { Link } from "react-router-dom"
-import '../style/Home.scss'
-
+import React from 'react'
+import Footer from './Footer'
+import { Link } from 'react-router-dom'
+import '../sass/app.scss'
 
 export default () => (
     <div className="home-page">

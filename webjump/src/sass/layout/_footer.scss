@@ -1,6 +1,3 @@
-@import '../../sass/abstract/variables';
-
-
 .footer{
     @include dimensions(1240px, 176px);
     @include margins(0px, 22px, 101px, 0px);

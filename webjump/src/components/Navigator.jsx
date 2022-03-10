@@ -1,7 +1,6 @@
-import React from "react"
-import { Link } from "react-router-dom"
-import '../style/Navigator.scss'
-
+import React from 'react'
+import { Link } from 'react-router-dom'
+import '../sass/app.scss'
 
 export default () => (
     <>

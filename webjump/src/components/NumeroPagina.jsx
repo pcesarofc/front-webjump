@@ -1,5 +1,5 @@
-import React from "react"
-import '../style/NumeroPagina.scss'
+import React from 'react'
+import '../sass/app.scss'
 
 export default () => (
     <div className="numbers-page">

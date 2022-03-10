@@ -1,5 +1,5 @@
-import React from "react"
-import '../style/Filtro.scss'
+import React from 'react'
+import '../sass/app.scss'
 
 export default () => ( 
     <aside className="aside-filter">

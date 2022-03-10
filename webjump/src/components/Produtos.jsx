@@ -1,6 +1,6 @@
-import React from "react";
-import Produto from "./Produto";
-import '../style/Produtos.scss'
+import React from 'react'
+import Produto from './Produto'
+import '../sass/app.scss'
 
 export default ({produtos}) => (
     <div className="products">

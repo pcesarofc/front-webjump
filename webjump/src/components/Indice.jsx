@@ -1,7 +1,6 @@
-import React from "react"
-import { Link } from "react-router-dom"
-import '../style/Indice.scss'
-
+import React from 'react'
+import { Link } from 'react-router-dom'
+import '../sass/app.scss'
 
 export default ({indice}) => (
     <div className="index-indicator">
@@ -9,6 +8,6 @@ export default ({indice}) => (
             Página Inicial
         </Link>
         <a className="bigger"> &gt;</a>
-        <a href="" className="index-second"> {indice}</a>
+        <a className="index-second"> {indice}</a>
     </div>
 )

@@ -1,5 +1,3 @@
-@import '../../sass/abstract/variables';
-
 .header-top{
     @include dimensions(auto, 31px);
     background-color: $webfatorial-black3;

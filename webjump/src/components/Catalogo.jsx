@@ -1,34 +1,33 @@
-import React from "react"
-import FiltroPreco from "./FiltroPreco"
+import React from 'react'
+import FiltroPreco from './FiltroPreco'
 import Produtos from './Produtos'
-import { useEffect } from "react"
-import { useLocation } from "react-router-dom"
-import { FaList } from "react-icons/fa"
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
+import { FaList } from 'react-icons/fa'
 import { BsFillGrid3X3GapFill } from 'react-icons/bs'
 import axios from 'axios'
 import $ from 'jquery'
-import '../style/Catalogo.scss'
-import '../style/Produtos.scss'
+import '../sass/app.scss'
 
 
 export default function () {
 
     const location = useLocation()
-    const url = 'http://localhost:8888/api/V1/categories/'
+    const url = "http://localhost:8888/api/V1/categories/"
     const [produtos, setprodutos] = React.useState([])
     let pather = 0
-    const [descricao, setDescricao] = React.useState('')
+    const [descricao, setDescricao] = React.useState("")
     
     useEffect( function Carregar () {
-        if(location.pathname == '/camisetas'){
+        if(location.pathname == "/camisetas"){
             pather = 1
-            setDescricao('Camisetas')
-        }else if(location.pathname == '/calcas') {
+            setDescricao("Camisetas")
+        }else if(location.pathname == "/calcas") {
             pather = 2
-            setDescricao('Calças')
+            setDescricao("Calças")
         }else {
             pather = 3
-            setDescricao('Sapatos')
+            setDescricao("Sapatos")
         }
         
         const finalurl = url + pather
@@ -41,12 +40,12 @@ export default function () {
                 let name = response.data.items[i].name.toUpperCase()
                 let preconovo = response.data.items[i].specialPrice
                 let specialPrice
-                if(typeof(preconovo) == 'number'){
-                    specialPrice = 'R$' + preconovo.toFixed(2).replace(".", ',')
+                if(typeof(preconovo) == "number"){
+                    specialPrice = "R$" + preconovo.toFixed(2).replace(".", ",")
                     price = specialPrice
-                    specialPrice = 'R$' + response.data.items[i].price.toFixed(2).replace(".", ",")
+                    specialPrice = "R$" + response.data.items[i].price.toFixed(2).replace(".", ",")
                 }else{ 
-                    price = 'R$' + price.toFixed(2).replace(".", ',')
+                    price = "R$" + price.toFixed(2).replace(".", ",")
                 }
                 
                 novosProdutos = [...novosProdutos, {
