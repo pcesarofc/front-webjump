@@ -17,7 +17,11 @@ export default function () {
     const [produtos, setprodutos] = React.useState([])
     let pather = 0
     const [descricao, setDescricao] = React.useState("")
+    const [, updateState] = React.useState();
+    const forceUpdate = React.useCallback(() => updateState({}), []);
+//------------------------------------------------------------------------//
     
+//-------------------CARREGAMENTO INICIAL DOS PRODUTOS--------------------//
     useEffect( function Carregar () {
         if(location.pathname == "/camisetas"){
             pather = 1
@@ -58,9 +62,12 @@ export default function () {
             setprodutos(novosProdutos)
         })
     }, [])
+//------------------------------------------------------------------------//
 
+//---------FUNÇÃO PARA ORDENAÇÃO DOS PRODUTOS DE ACORDO COM TEXTO---------//
     function orderProducts(){
-        
+
+        var select = document.querySelector('select');
         let newProducts = produtos
         let i
         let newprice
@@ -71,23 +78,34 @@ export default function () {
             newprice = parseFloat(newprice)
             newProducts[i].price = newprice
         }
-
-        newProducts.sort(function(a, b) {
-            if(a.price < b.price) {
-              return -1;
-            } else {
-              return true;
-            }
-          });
-
+        if(select.value == 2){
+            newProducts.sort(function(a, b) {
+                if(a.price < b.price) {
+                    return -1;
+                } else {
+                    return true;
+                }
+              });
+        }else if(select.value ==1) {
+            newProducts.sort(function(a, b) {
+                if(a.price > b.price) {
+                    return -1;
+                } else {
+                    return true;
+                }
+              });
+        }
         for (i in newProducts){
             newprice2 = "R$" + newProducts[i].price.toFixed(2).replace(".", ",")
             newProducts[i].price = newprice2
         }
-
+        
         setprodutos(newProducts)
+        forceUpdate()
     }
-    
+//------------------------------------------------------------------------//
+
+//-------------------COLORAÇÃO DOS ICONES GRID E LIST---------------------//
     function viewGrid(){
         $(".products").css("display", "flex")
         $(".product").css("flex-direction", "column")
@@ -101,6 +119,7 @@ export default function () {
         $(".grid").css("color", "#00A8A9")
 
     }
+//------------------------------------------------------------------------//
 
     return <section  className="products-catalog">
         <h1 className="title-product" >{descricao}</h1>
